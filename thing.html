@@ -58,11 +58,10 @@
 
 <script>
     var max_auth, max_radc, max_prog, max_anth, max_nihi
-
     max_auth = max_radc = max_prog = max_anth = max_nihi = 0;
     var auth, radc, prog, anth, nihi
-    auth = radc = prog = anth = nihi =0;
-    var qn=0
+    auth = radc = prog = anth = nihi = 0;
+    var qn = 0;
     var prev_answer = null;
     init_question();
     for (var i = 0; i < questions.length; i++) {
@@ -73,8 +72,8 @@
         max_nihi += Math.abs(questions[i].effect.nihi)
     }
     function init_question() {
-        document.getElementById("qt").innerHTML = questions[qn].question;
-        document.getElementById("qon").innerHTML = "Question" + (qn + 1) + " of " + "questions.length";
+        document.getElementById("question-text").innerHTML = questions[qn].question;
+        document.getElementById("question-number").innerHTML = "Question" + (qn + 1) + " of " + "questions.length";
         if (prev_answer == null) {
             document.getElementById("back_button").style.display = 'none';
             document.getElementById("back_button_off").style.display = 'block';
