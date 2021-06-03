@@ -470,16 +470,6 @@ questions = [
         }
     },
     {
-        "question": "Trade with nations which do not obey internationalclimate laws should be stopped."
-        "effect": {
-            "auth": 0,
-            "radc": -1,
-            "prog": -1,
-            "anth": -2,
-            "nihi": 0
-        }
-    },
-    {
         "question": "Non-essential travel, like tourism, should be restricted."
         "effect": {
             "auth": 3,
