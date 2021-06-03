@@ -1,4 +1,3 @@
-questions = [
     {
         "question": "Governments should place more environmental restrictions on businesses and penalize businesses which pollute.",
         "effect": {
@@ -10,10 +9,10 @@ questions = [
         }
     },
     {
-        "question": "Violent demonstrations are justified.",
+        "question": "Violent demonstrations are not effective.",
         "effect": {
             "auth": 0,
-            "radc": 6,
+            "radc": -6,
             "prog": 0,
             "anth": 0,
             "nihi": 0
@@ -80,12 +79,12 @@ questions = [
         }
     },
     {
-        "question": "Renewable energy plants which hurt the local wildlife should still be built.",
+        "question": "Infrastructure which damages the local environment, even if it is renewable, should not be built.",
         "effect": {
-            "auth": 0,
+            "auth": -1,
             "radc": 0,
-            "prog": 3,
-            "anth": 6,
+            "prog": -3,
+            "anth": -6,
             "nihi": 0
         }
     },
@@ -104,13 +103,13 @@ questions = [
         "effect": {
             "auth": 1,
             "radc": 1,
-            "prog": 2,
+            "prog": -2,
             "anth": 2,
             "nihi": 5
         }
     },
     {
-        "question": "Investments in science and technology will help combat climate change.",
+        "question": "Investments in advances in science and technology will help combat climate change.",
         "effect": {
             "auth": 0,
             "radc": 0,
@@ -170,10 +169,10 @@ questions = [
         }
     },
     {
-        "question": "Governments should punish induviduals who excessively pollute.",
+        "question": "Governments should be involved in people's personal lives to reduce emissions.",
         "effect": {
-            "auth": 6,
-            "radc": 0,
+            "auth": 7,
+            "radc": 2,
             "prog": 0,
             "anth": 0,
             "nihi": 0
@@ -200,7 +199,7 @@ questions = [
         }
     },
     {
-        "question": "Individuals should boycott environmentally harmful organizations.",
+        "question": "Rather than forcibly limiting polluting businesses, they should be boycotted instead.",
         "effect": {
             "auth": -4,
             "radc": -4,
@@ -233,7 +232,7 @@ questions = [
         "question": "Direct action against polluting organizations and induviduals, even if violent, is justified.",
         "effect": {
             "auth": -2,
-            "radc": -6,
+            "radc": 5,
             "prog": 0,
             "anth": 0,
             "nihi": 0
@@ -250,12 +249,12 @@ questions = [
         }
     },
     {
-        "question": "The birth rate should be reduced to prevent the strain on the planet's resources.",
+        "question": "Decreasing the population, even by non-violent means, is not an acceptable way to stop climate change.",
         "effect": {
-            "auth": 3,
-            "radc": 4,
+            "auth": -3,
+            "radc": -5,
             "prog": 0,
-            "anth": 0,
+            "anth": 1,
             "nihi": 0
         }
     },
@@ -264,25 +263,25 @@ questions = [
         "effect": {
             "auth": 0,
             "radc": -2,
-            "prog": 5,
-            "anth": 0,
+            "prog": 4,
+            "anth": 1,
             "nihi": 0
         }
     },
     {
         "question": "Some industries, even though they release hugh levels of emissions, are too vital to be shut down.",
         "effect": {
-            "auth": -2,
+            "auth": -3,
             "radc": -2,
             "prog": 3,
-            "anth": 1,
+            "anth": 2,
             "nihi": 0
         }
     },
     {
         "question": "Organizations should pay for any damage they inflict on the environment.",
         "effect": {
-            "auth": -1,
+            "auth": 1,
             "radc": -2,
             "prog": 0,
             "anth": 0,
@@ -292,15 +291,15 @@ questions = [
     {
         "question": "We will have to accept a decrease in our standard of living to combat climate change.",
         "effect": {
-            "auth": -1,
+            "auth": 0,
             "radc": 0,
             "prog": -2,
-            "anth": -1,
+            "anth": -2,
             "nihi": 0
         }
     },
     {
-        "question": "There will be a refugee crisis due to climate change in this century, and we should preapre for it.",
+        "question": "There will be a refugee crisis due to climate change in this century, and we should prepare for it.",
         "effect": {
             "auth": 0,
             "radc": 0,
@@ -313,7 +312,7 @@ questions = [
         "question": "Even if some lives are lost, eco-terrorism is acceptable if emissions are reduced as a result.",
         "effect": {
             "auth": -3,
-            "radc": 5,
+            "radc": 8,
             "prog": -1,
             "anth": -1,
             "nihi": 0
@@ -323,13 +322,13 @@ questions = [
         "question": "The international community should co-operate to reduce climate change.",
         "effect": {
             "auth": 1,
-            "radc": -2,
+            "radc": -1,
             "prog": 1,
             "anth": 0,
             "nihi": -1
         }
     },
- {
+    {
         "question": "Efforts should be made to protect animals from climate change.",
         "effect": {
             "auth": 0,
@@ -349,7 +348,7 @@ questions = [
             "nihi": -4
         }
     },
- {
+    {
         "question": "Nuclear Plants are an acceptable alternative to conventional fossil fuels.",
         "effect": {
             "auth": 0,
@@ -359,15 +358,14 @@ questions = [
             "nihi": 0
         }
     },
-
     {
-        "question": "No major change can occur on the level of induvidual actions.",
+        "question": "No major change can occur on the level of individual actions.",
         "effect": {
             "auth": 0,
             "radc": 1,
-            "prog": 2,
-            "anth": 3,
-            "nihi": 0
+            "prog": 0,
+            "anth": 2,
+            "nihi": 4
         }
     },
     {
@@ -381,23 +379,133 @@ questions = [
         }
     },
     {
-        "question": "Organizations such as Greenpeace  are effective.",
+        "question": "Organizations such as Greenpeace are effective.",
         "effect": {
-            "auth": 0,
-            "radc": 0,
+            "auth": -1,
+            "radc": 2,
             "prog": 0,
+            "anth": -1,
+            "nihi": 0
+        }
+    },
+    {
+        "question": "We should reduce production and consumption of meat and other environentally harmful products.",
+        "effect": {
+            "auth": 1,
+            "radc": 3,
+            "prog": 0,
+            "anth": -3,
+            "nihi": 0
+        }
+    },
+    {
+        "question": "We should shut down all factories.",
+        "effect": {
+            "auth": 1,
+            "radc": 4,
+            "prog": -5,
+            "anth": -5,
+            "nihi": 0
+        }
+    },
+    {
+        "question": "Banning environmentally harmful goods is ineffective, we should instead develop eco-friendly alternatives.",
+        "effect": {
+            "auth": -3,
+            "radc": 0,
+            "prog": 4,
             "anth": 2,
             "nihi": 0
         }
-    }
+    },
+    {
+        "question": "Investing in humanitarian efforts in third-world countries is good as it reduces likelihood of conflict over scarce resources.",
+        "effect": {
+            "auth": 0,
+            "radc": -1,
+            "prog": 1
+            "anth": 4
+            "nihi": -1
+        }
+    },
+    {
+        "question": "Incentives to motivate people to recycle are useful.",
+        "effect": {
+            "auth": 3,
+            "radc": -3,
+            "prog": 1,
+            "anth": 0,
+            "nihi": 0,
+        }
+    },
+    {
+        "question": "Any decisions on conservation should be taken at the local level and should not disregard the local population.",
+        "effect": {
+            "auth": -5,
+            "radc": 0,
+            "prog": 0,
+            "anth": 1,
+            "nihi": 0,
+        }
+    },
+    {
+        "question": "People who believe that technological advances will stop climate change are too optimistic.",
+        "effect": {
+            "auth": 0,
+            "radc": 0,
+            "prog": -5,
+            "anth": 0,
+            "nihi": 4,
+        }
+    },
+    {
+        "question": "With sufficient education and funding, especially to underpriveliged groups, climate change can be reduced."
+        "effect": {
+            "auth": -4,
+            "radc": -1,
+            "prog": 0,
+            "anth": 2,
+            "nihi": -3,
+        }
+    },
+    {
+        "question": " should halt most, if not all, trade with countries who do not obey international norms."
+        "effect": {
+            "auth": 0,
+            "radc": -1,
+            "prog": -1,
+            "anth": -2,
+            "nihi": 0
+        }
+    },
+    {
+        "question": "Non-essential travel, like tourism, should be restricted."
+        "effect": {
+            "auth": 3,
+            "radc": 0,
+            "prog": -1,
+            "anth": -2,
+            "nihi": 0
+        }
+    },
+    {
+        "question": "Chemical fertilizers and pesticides should be banned."
+        "effect": {
+            "auth": 4,
+            "radc": 2,
+            "prog": -2,
+            "anth": -2,
+            "nihi": 0
+        }
+    },
+    {
+        "question": "people in small groups are more effective than a larger, centralized arganization."
+        "effect": {
+            "auth": -5,
+            "radc": 1,
+            "prog": -2,
+            "anth": 1,
+            "nihi": 0,
+        }
+    },
 ];
-
-
-
-
-
-
-
-
-
-
