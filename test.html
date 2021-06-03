@@ -38,9 +38,9 @@
 </script>
 <
 
-<h1 class="question"></h1>
+<h1 class="question_number"></h1>
 
-<p class="question" id="question-text"></p>
+<p id="question_number"></p>
 <button class="button sagr" onclick="next_question( 1.5)"><b>Strongly Agree</b></button><br>
 
 <button class="button agr" onclick="next_question( 1.0)"><b>Agree</b></button><br>
@@ -66,12 +66,7 @@
     var prev_answer = null;
     init_question();
     for (var i = 0; i < questions.length; i++) {
-        max_auth += Math.abs(questions[i].effect.auth)
-        max_radc += Math.abs(questions[i].effect.radc)
-        max_prog += Math.abs(questions[i].effect.prog)
-        max_anth += Math.abs(questions[i].effect.anth)
-        max_nihi += Math.abs(questions[i].effect.nihi)
-
+000
     }
 
     function question_number (qn) {
