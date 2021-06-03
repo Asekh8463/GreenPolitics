@@ -424,8 +424,8 @@ questions = [
         "effect": {
             "auth": 0,
             "radc": -1,
-            "prog": 1
-            "anth": 4
+            "prog": 1,
+            "anth": 4,
             "nihi": -1
         }
     },
@@ -436,7 +436,7 @@ questions = [
             "radc": -3,
             "prog": 1,
             "anth": 0,
-            "nihi": 0,
+            "nihi": 0
         }
     },
     {
@@ -446,7 +446,7 @@ questions = [
             "radc": 0,
             "prog": 0,
             "anth": 1,
-            "nihi": 0,
+            "nihi": 0
         }
     },
     {
@@ -456,7 +456,7 @@ questions = [
             "radc": 0,
             "prog": -5,
             "anth": 0,
-            "nihi": 4,
+            "nihi": 4
         }
     },
     {
@@ -466,7 +466,7 @@ questions = [
             "radc": -1,
             "prog": 0,
             "anth": 2,
-            "nihi": -3,
+            "nihi": -3
         }
     },
     {
@@ -506,7 +506,7 @@ questions = [
             "radc": 1,
             "prog": -2,
             "anth": 1,
-            "nihi": 0,
+            "nihi": 0
         }
     },
 ];
