@@ -36,6 +36,7 @@
 <script type="application/javascript"
         src="script.js">
 </script>
+<
 
 <h1 class="question"></h1>
 
@@ -70,20 +71,15 @@
         max_prog += Math.abs(questions[i].effect.prog)
         max_anth += Math.abs(questions[i].effect.anth)
         max_nihi += Math.abs(questions[i].effect.nihi)
-    }
-    function init_question() {
-        document.getElementById("question-text").innerHTML = questions[qn].question;
-        document.getElementById("question-number").innerHTML = "Question" + (qn + 1) + " of " + "questions.length";
-        if (prev_answer == null) {
-            document.getElementById("back_button").style.display = 'none';
-            document.getElementById("back_button_off").style.display = 'block';
-        } else {
-            document.getElementById("back_button").style.display = 'block';
-            document.getElementById("back_button_off").style.display = 'none';
-        }
 
     }
 
+    function question_number (qn) {
+	    return (1 + qn);
+    }
+
+document.getElemntById("question_number").innerhtml
+	
     function next_question(mult) {
         auth += mult*questions[qn].effect.auth
         radc += mult*questions[qn].effect.radc
@@ -96,20 +92,6 @@
         } else {
             results();
         }
-    }
-
-    function prev_question() {
-        if (qn == null) {
-            return;
-        }
-        qn--;
-        auth -= prev_answer * questions[qn].effect.auth;
-        radc -= prev_answer * questions[qn].effect.radc;
-        prog -= prev_answer * questions[qn].effect.prog;
-        anth -= prev_answer * questions[qn].effect.anth;
-	nihi -= prev_answer * questions[qn].effect.nihi;
-        prev_answer = null 
-        init question();
     }
 
     function calc_score(score,max) {
