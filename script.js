@@ -469,7 +469,7 @@
         }
     },
     {
-        "question": "Nations should halt most trade with countries who do not obey international laws regarding emissions."
+        "question": "Trade with nations which do not obey internationalclimate laws should be stopped."
         "effect": {
             "auth": 0,
             "radc": -1,
