@@ -58,6 +58,16 @@
 
 
 <script>
+  var max_auth, max_radc, max_prog, max_anth, max_nihi
+  var auth, radc, prog, anth, nihi
+  auth = radc = prog = anth = nihi
+  var qn = 0;
+  function init_question() {
+    document.GetElementById("question-text").innerHTML = questions[qn].question;
+    document.GetElementById("question-number").innerHTML = "Question " + (qn + 1) + "of" + (questions.length);
+  }
+    
+  
 questions = [
     {
         "question": "Governments should place more environmental restrictions on businesses and penalize businesses which pollute.",
