@@ -40,7 +40,7 @@
 
 <h1 class="question_number"></h1>
 
-<p id="question_number"></p>
+<p class="question" id="question-text"></p>
 <button class="button sagr" onclick="next_question( 1.5)"><b>Strongly Agree</b></button><br>
 
 <button class="button agr" onclick="next_question( 1.0)"><b>Agree</b></button><br>
@@ -60,7 +60,7 @@
 <script>
   var max_auth, max_radc, max_prog, max_anth, max_nihi
   var auth, radc, prog, anth, nihi
-  auth = radc = prog = anth = nihi
+  auth = radc = prog = anth = nihi = 0
   var qn = 0;
   function init_question() {
     document.GetElementById("question-text").innerHTML = questions[qn].question;
