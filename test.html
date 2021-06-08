@@ -37,6 +37,8 @@
         src="script.js">
 </script>
 
+<h2 style="text-align:center;" id="question-number">Loading...</h2>
+<p class="question" id="question-text"></p>
 
 <p class="question" id="question-text"></p>
 <button class="button sagr" onclick="next_question( 1.5)"><b>Strongly Agree</b></button><br>
@@ -62,7 +64,7 @@
   auth = radc = prog = anth = nihi = 0;
   var qn = 0;
   var prev_answer = null;
-  init_question()
+  init_question();
   for (var i = 0; i < questions.length; i++) {
     max_auth += Math.abs.(questions[i].effect.auth)
     max_radc += Math.abs.(questions[i].effect.radc)
@@ -74,8 +76,21 @@
     document.GetElementById("question-text").innerHTML = questions[qn].question;
     document.GetElementById("question-number").innerHTML = "Question " + (qn + 1) + "of" + (questions.length);
   }
+  function next_question(mult) {
+    auth += mult*questions[qn].effect.auth
+    radc += mult*questions[qn].effect.radc
+    prog += mult*questions[qn].effect.prog
+    anth += mult*questions[qn].effect.anth
+		nihi += mult*questions[qn].effect.nihi
+    qn++;
+    prev_answer=mult;
+    if (qn < questions.length) {
+      init_question();
+    } else {
+      results();
+    }
+  }   
   
-    
   
 questions = [
     {
