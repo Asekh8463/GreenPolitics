@@ -40,7 +40,7 @@
 <script type="application/javascript"
         src="script.js">
 </script>
-<h1></h1>
+	
 <h2 style="text-align:center;" id="question-number"></h2>
 <p class="question" id="question-text"></p>
 
@@ -59,6 +59,7 @@
 <button class="button dis" onclick="next_question(-1.0)"><b>Disagree</b></button> <br>
 
 <button class="button stdis" onclick="next_question(-1.5)"><b>Strongly Disagree</b></button> <br> <br> <br>
+
 <button class="bck" onclick="prev_question()" id="back_button">Back</button><br>
 <button class="bck" id="back_button_off">Back</button><br>
 </body>
@@ -80,8 +81,8 @@
     max_nihi += Math.abs.(questions[i].effect.nihi)
   }
   function init_question() {
-    document.GetElementById("question-text").innerHTML = questions[qn].question;
-    document.GetElementById("question-number").innerHTML = "Question " + (qn + 1) + "of" + (questions.length);
+    document.getElementById("question-text").innerHTML = questions[qn].question;
+    document.getElementById("question-number").innerHTML = "Question " + (qn + 1) + "of" + (questions.length);
         if (prev_answer == null) {
             document.getElementById("back_button").style.display = 'none';
             document.getElementById("back_button_off").style.display = 'block';
@@ -110,11 +111,11 @@
             return;
 	}
 	qn--;
-    auth -= mult*questions[qn].effect.auth
-    radc -= mult*questions[qn].effect.radc
-    prog -= mult*questions[qn].effect.prog
-    anth -= mult*questions[qn].effect.anth
-    nihi -= mult*questions[qn].effect.nihi
+    auth -= prev * questions[qn].effect.auth;
+    radc -= prev * questions[qn].effect.radc;
+    prog -= prev * questions[qn].effect.prog;
+    anth -= prev * questions[qn].effect.anth;
+    nihi -= prev * questions[qn].effect.nihi;
     prev_answer = null;
     init_question();
     }
@@ -122,12 +123,12 @@
         return (100*(max+score)/(2*max)).toFixed(1)
     }
     function results() {
-        location.href = "results.html"
-            + `?r=${calc_score(auth,max_auth)}`
-            + `&c=${calc_score(radc,max_radc)}`
-            + `&o=${calc_score(prog,max_prog)}`
-	    + `&g=${calc_score(anth,max_anth)}`
-            + `&p=${calc_score(nihi,max_nihi)}`
+        location.href = `results.html`
+            + `?a=${calc_score(auth,max_auth)}`
+            + `&r=${calc_score(radc,max_radc)}`
+            + `&p=${calc_score(prog,max_prog)}`
+	    + `&a=${calc_score(anth,max_anth)}`
+            + `&n=${calc_score(nihi,max_nihi)}`
     }
 </script>
 </body>
