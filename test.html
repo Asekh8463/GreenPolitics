@@ -7,13 +7,16 @@
   border: 6px solid black;
   background-color:#009900;
   color: #ffffff;
-  padding: 35px 115px;
+  padding: 0px 50px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 30px;
+  font-size: 20px;
   border-radius: 10px;
-  margin: 5px 5px;
+  margin: 2.5px;
+  height: 60px;
+  width: 550px;
+  margin-left: 355px;
 }
 </style>
 <title>GreenPolitics</title>
@@ -28,13 +31,16 @@
 <button class="button" onclick="next_question( 1.05)" style="background-color: #108213;">Strongly Agree</button> <br>
 	
 <button class="button" onclick="next_question( 1.0)" style="background-color: #3cd513;">Agree</button> <br>
-<button class="button" onclick="next_question( 0.5)" style="background-color: #00ff7c;">Partially Agree</button> <br>
+	
+<button class="button" onclick="next_question( 0.5)" style="background-color: #00ff7c;">Somewhat Agree</button> <br>
+	
 <button class="button" onclick="next_question( 0.0)" style="background-color: #808080;">Neutral/Unsure</button> <br>
-<button class="button" onclick="next_question(-0.5)" style="background-color: #eb6c6b;">Partially Disagree</button> <br>
+	
+<button class="button" onclick="next_question(-0.5)" style="background-color: #eb6c6b;">Somewhat Disagree</button> <br>
+	
 <button class="button" onclick="next_question(-1.0)" style="background-color: #ff1700;">Disagree</button> <br>
+	
 <button class="button" onclick="next_question(-1.5)" style="background-color: #920000;">Strongly Disagree</button> <br>
-<button class="small_button" onclick="prev_question()" id="back_button">Back</button>
-<button class="small_button_off" id="back_button_off">Back</button><br>
 
 <script>
     var max_auth, max_radc, max_prog, max_anth, max_nihi
@@ -97,7 +103,7 @@
         return (100*(max+score)/(2*max)).toFixed(1)
     }
     function results() {
-        location.href = `results.html`
+        location.href = `end.html`
             + `?u=${calc_score(auth,max_auth)}`
             + `&r=${calc_score(radc,max_radc)}`
             + `&p=${calc_score(prog,max_prog)}`
