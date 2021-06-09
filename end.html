@@ -3,14 +3,56 @@
 <head>
 <link rel="stylesheet" href="layout.css">
  <style>
-   div.value {
+  div.text {
+    font-family: Arial;
+    font-size: 20px;
+    line-height: 36pt;
+    color: #ffffff;
+    display: inline-block;
+}
+  div.value {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+   div.score {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    div.bar {
+    height: 36pt;
+    line-height: 36pt;
+    padding: 8pt;
+    margin-top: 4pt;
+    margin-bottom: 4pt;
+    border-width: 4px;
+    border-right-width: 1px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-color: #000000;
+    background-color: #eeeeee;
+    display: block;
+    width: 50%;
+}
+    div.auth {
+     background-color: #00008f;
+}
+    div.dece {
+     background-color: #006ab8;
+}    
   </style>
 <title> GreenPolitics </title>
 </head>
 <body>
   <h1>GreenPolitics Results</h1><br>
-  <p><b>Co-ordination</b></p>
+  <p><b>Centralism</b></p>
+ <div class="score">
+<img id="img-auth" src="auth.png" height=128pt"/>
+<div class="score auth" id="score-auth"><div class="text" id="centralized"></div></div>
+<div class="score dece" id="score-dece"><div class="test" id="decentral"></div></div>
+<img id="img-indy" src="indy.png" height=128pt"/>
+ </div>
+                                               
+
