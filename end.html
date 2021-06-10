@@ -141,7 +141,7 @@ iz<!DOCTYPE html>
     radcArray = ["Revolutionary","Radical","Somewhat Radical","Neutral","Somewhat Reformist","Reformist","Institutionalist"]
     progArray = ["Very Progressive","Progressive","Slightly Progressive","Balanced","Slightly Regressive","Regressive","Primitivist"]
     anthArray = ["Strong Anthropocentrist","Anthropocentrist","Leaning Ecocentrist","Neutral","Leaning Ecocentrist","Ecocentrist","Strong Ecocentrist"]
-	nihiArray = ["Cynicist","Pessimist","Realist","Balanced","Hopeful","Optimist","Very optimistic"]
+    nihiArray = ["Cynicist","Pessimist","Realist","Balanced","Hopeful","Optimist","Very optimistic"]
 
 
     function setLabel(val,ary) {
@@ -286,11 +286,12 @@ iz<!DOCTYPE html>
             if (primitive        > 30) {ctx.fillText(primitive + "%", 670, 477.5)}
             if (ecocentrist      > 30) {ctx.fillText(ecocentrist + "%", 670, 597.5)}
             if (optimist         > 30) {ctx.fillText(optimist + "%", 670, 717.5)}
-
-            ctx.font="300 25px Arial"
-            ctx.fillText("GreenValues", 780, 40)
-	    	ctx.fillText(version, 780, 70)
-            ctx.textAlign="center"
+            ctx.fillStyle="#e7decc"
+            ctx.font="700 80px Arial"
+            ctx.textAlign="left"
+            ctx.fillText("GreenValues", 20, 90)
+            ctx.font="50px Arial"
+            ctx.fillText(ideology, 20, 140)
             ctx.fillText("Centralism Axis: " + document.getElementById("centralized-label").innerHTML, 400, 175)
             ctx.fillText("Rebelliousness Axis: " + document.getElementById("radical-label").innerHTML, 400, 295)
             ctx.fillText("Technology Axis: " + document.getElementById("progressive-label").innerHTML, 400, 415)
