@@ -60,14 +60,7 @@
     function init_question() {
         document.getElementById("question-text").innerHTML = questions[qn].question;
         document.getElementById("question-number").innerHTML = "Question " + (qn + 1) + " / " + (questions.length);
-        if (prev_answer == null) {
-            document.getElementById("back_button_off").style.display = 'block';
-        } else {
-            document.getElementById("back_button").style.display = 'block';
-            document.getElementById("back_button_off").style.display = 'none';
         }
-
-    }
 
     function next_question(mult) {
         auth += mult*questions[qn].effect.auth
