@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+iz<!DOCTYPE html>
 <html lang="en-UK">
 <head>
 <link rel="stylesheet" href="layout.css">
@@ -54,6 +54,14 @@
 <div class="score dece" id="score-dece"><div class="test" id="decentral"></div></div>
 <img id="img-indy" src="indy.png" height=128pt"/>
  </div>
+	
+	
+	
+<h2>Closest Match: <span class="weight-300" id="ideology-label"></span></h2>
+
+<p>Have any questions, comments, or criticisms? DM me @Asekh#8463 on discord!</p>
+<hr/>
+<img src="" id="saveable">
  <script>
     function getQueryVariable(variable)
     {
@@ -214,35 +222,29 @@
             ctx.fillText(ideology, 20, 140)
 
             ctx.textAlign="left"
-            if (moderate       > 30) {ctx.fillText(moderate + "%", 130, 237.5)}
-            if (leftunity      > 30) {ctx.fillText(leftunity + "%", 130, 357.5)}
-            if (centralized    > 30) {ctx.fillText(centralized + "%", 130, 477.5)}
-            if (localist       > 30) {ctx.fillText(localist + "%", 130, 597.5)}
-            if (traditionalist > 30) {ctx.fillText(traditionalist + "%", 130, 717.5)}
-            if (reform         > 30) {ctx.fillText(reform + "%", 130, 837.5)}
-            if (markets        > 30) {ctx.fillText(markets + "%", 130, 957.5)}
+            if (centralized      > 30) {ctx.fillText(centralized + "%", 130, 237.5)}
+            if (radical          > 30) {ctx.fillText(radical + "%", 130, 357.5)}
+            if (progressive      > 30) {ctx.fillText(progressive + "%", 130, 477.5)}
+            if (anthropocentrist > 30) {ctx.fillText(anthropocentrist + "%", 130, 597.5)}
+            if (pessimist        > 30) {ctx.fillText(pessimist + "%", 130, 717.5)}
             ctx.textAlign="right"
-            if (radical        > 30) {ctx.fillText(radical + "%", 670, 237.5)}
-            if (libunity       > 30) {ctx.fillText(libunity + "%", 670, 357.5)}
-            if (decentralized  > 30) {ctx.fillText(decentralized + "%", 670, 477.5)}
-            if (globalist      > 30) {ctx.fillText(globalist + "%", 670, 597.5)}
-            if (progressive    > 30) {ctx.fillText(progressive + "%", 670, 717.5)}
-            if (revolution     > 30) {ctx.fillText(revolution + "%", 670, 837.5)}
-            if (planning       > 30) {ctx.fillText(planning + "%", 670, 957.5)}
+            if (decentral        > 30) {ctx.fillText(decentral + "%", 670, 237.5)}
+            if (reformist        > 30) {ctx.fillText(reformist + "%", 670, 357.5)}
+            if (primitive        > 30) {ctx.fillText(primitive + "%", 670, 477.5)}
+            if (ecocentrist      > 30) {ctx.fillText(ecocentrist + "%", 670, 597.5)}
+            if (optimist         > 30) {ctx.fillText(optimist + "%", 670, 717.5)}
 
             ctx.font="300 25px Arial"
             ctx.fillText("GreenValues", 780, 40)
 	    	ctx.fillText(version, 780, 70)
             ctx.textAlign="center"
-            ctx.fillText("Radicality Axis: " + document.getElementById("radicality-label").innerHTML, 400, 175)
-            ctx.fillText("Co-operation Axis: " + document.getElementById("co-operation-label").innerHTML, 400, 295)
-            ctx.fillText("Ownership Axis: " + document.getElementById("ownership-label").innerHTML, 400, 415)
-            ctx.fillText("World Axis: " + document.getElementById("world-label").innerHTML, 400, 535)
-            ctx.fillText("Culture Axis: " + document.getElementById("culture-label").innerHTML, 400, 655)
-            ctx.fillText("Rebelliousness Axis: " + document.getElementById("rebelliousness-label").innerHTML, 400, 775)
-            ctx.fillText("Markets Axis: " + document.getElementById("markets-label").innerHTML, 400, 895)
+            ctx.fillText("Radicality Axis: " + document.getElementById("centralized-label").innerHTML, 400, 175)
+            ctx.fillText("Co-operation Axis: " + document.getElementById("radical-label").innerHTML, 400, 295)
+            ctx.fillText("Ownership Axis: " + document.getElementById("progressive-label").innerHTML, 400, 415)
+            ctx.fillText("World Axis: " + document.getElementById("anthropocentrist-label").innerHTML, 400, 535)
+            ctx.fillText("Culture Axis: " + document.getElementById("pessimist-label").innerHTML, 400, 655)
 
-            document.getElementById("banner").src = c.toDataURL();
+            document.getElementById("saveable").src = c.toDataURL();
         }
     }    
     </script>
