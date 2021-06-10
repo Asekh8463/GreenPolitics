@@ -210,7 +210,7 @@ iz<!DOCTYPE html>
 
 
 
-    document.getElementById("centralism-label").innerHTML = setLabel(centralism, authArray)
+    document.getElementById("centralism-label").innerHTML = setLabel(centralized, authArray)
     document.getElementById("radicalism-label").innerHTML = setLabel(radical, radcArray)
     document.getElementById("techno-label").innerHTML = setLabel(progressive, progArray)
     document.getElementById("centric-label").innerHTML = setLabel(anthropocentric, anthArray)
@@ -225,7 +225,7 @@ iz<!DOCTYPE html>
         dist += Math.pow(Math.abs(ideologies[i].stats.coop - radical), 1.5)
         dist += Math.pow(Math.abs(ideologies[i].stats.ownr - progressive), 1.75)
         dist += Math.pow(Math.abs(ideologies[i].stats.glob - anthropocentric), 1.5)
-	dist += Math.pow(Math.abs(ideologies[i].stats.prog - pessimism), 1.5)
+	dist += Math.pow(Math.abs(ideologies[i].stats.prog - pessimism), 0)
 
         if (dist < ideodist) {
             ideology = ideologies[i].name
