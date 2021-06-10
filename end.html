@@ -48,24 +48,65 @@ iz<!DOCTYPE html>
      div.refr {
      background-color: #ff86c1;
 }
+    div.prog {
+     background-color: #0000ff;
+}
+     div.prim {
+     background-color: #008800;
+}
+    div.anth {
+     background-color: #848484;
+}
+     div.ecoc {
+     background-color: #00ff00;
+}
+    div.pess {
+     background-color: #7b1f94;
+}
+     div.opti {
+     background-color: #00b61a;
+}
 </style>
 <title> GreenPolitics </title>
 </head>
 <body>
   <h1>GreenPolitics Results</h1><br>
-  <p><b>Centralism</b></p>
+	<p><b>Centralism: <span class="weight-300" id="centralized-label"></span></b></p>
  <div class="line">
 <img id="img-auth" src="auth.png" height=128pt"/>
 <div class="score auth" id="score-auth"><div class="text" id="centralized"></div></div>
 <div class="score dece" id="score-dece"><div class="text" id="decentral"></div></div>
 <img id="img-indy" src="indy.png" height=128pt"/>
  </div>
+  <p><b>Rebelliouness: <span class="weight-300" id="radical-label"></span></b></p></b></p>
  <div class="line">
 <img id="img-radical" src="radical.png" height=128pt"/>
 <div class="score radc" id="score-radc"><div class="text" id="radical"></div></div>
 <div class="score refr" id="score-refr"><div class="text" id="reformist"></div></div>
 <img id="img-reform" src="reform.png" height=128pt"/>
  </div>
+  <p><b>Technology: <span class="weight-300" id="progressive-label"></span></b></p></b></p>
+ <div class="line">
+<img id="img-progress" src="progress.png" height=128pt"/>
+<div class="score prog" id="score-prog"><div class="text" id="progressive"></div></div>
+<div class="score prim" id="score-prim"><div class="text" id="primitive"></div></div>
+<img id="img-prim" src="prim.png" height=128pt"/>
+ </div>
+  <p><b>Centric: <span class="weight-300" id="anthropocentrist-label"></span></b></p></b></p>
+ <div class="line">
+<img id="img-anthro" src="anth.png" height=128pt"/>
+<div class="score anth" id="score-anth"><div class="text" id="anthropocentric"></div></div>
+<div class="score ecoc" id="score-ecoc"><div class="text" id="ecocentric"></div></div>
+<img id="img-eco" src="eco.png" height=128pt"/>
+ </div>
+  <p><b>Future: <span class="weight-300" id="pessimist-label"></span></b></p></b></p>
+ <div class="line">
+<img id="img-pessimism" src="pessimism.png" height=128pt"/>
+<div class="score pess" id="score-pess"><div class="text" id="anthropocentric"></div></div>
+<div class="score opti" id="score-opti"><div class="text" id="ecocentric"></div></div>
+<img id="img-optimism" src="optimism.png" height=128pt"/>
+ </div>
+	
 	
 	
 	
@@ -250,11 +291,11 @@ iz<!DOCTYPE html>
             ctx.fillText("GreenValues", 780, 40)
 	    	ctx.fillText(version, 780, 70)
             ctx.textAlign="center"
-            ctx.fillText("Radicality Axis: " + document.getElementById("centralized-label").innerHTML, 400, 175)
-            ctx.fillText("Co-operation Axis: " + document.getElementById("radical-label").innerHTML, 400, 295)
-            ctx.fillText("Ownership Axis: " + document.getElementById("progressive-label").innerHTML, 400, 415)
-            ctx.fillText("World Axis: " + document.getElementById("anthropocentrist-label").innerHTML, 400, 535)
-            ctx.fillText("Culture Axis: " + document.getElementById("pessimist-label").innerHTML, 400, 655)
+            ctx.fillText("Centralism Axis: " + document.getElementById("centralized-label").innerHTML, 400, 175)
+            ctx.fillText("Rebelliousness Axis: " + document.getElementById("radical-label").innerHTML, 400, 295)
+            ctx.fillText("Technology Axis: " + document.getElementById("progressive-label").innerHTML, 400, 415)
+            ctx.fillText("Centric Axis: " + document.getElementById("anthropocentrist-label").innerHTML, 400, 535)
+            ctx.fillText("Future Axis: " + document.getElementById("pessimist-label").innerHTML, 400, 655)
 
             document.getElementById("saveable").src = c.toDataURL();
         }
