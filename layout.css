@@ -28,3 +28,99 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+div.axis {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.bar {
+    height: 36pt;
+    line-height: 36pt;
+    padding: 8pt;
+    margin-top: 4pt;
+    margin-bottom: 4pt;
+    border-width: 4px;
+    border-right-width: 1px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-color: #222222;
+    background-color: #eeeeee;
+    display: block;
+    width: 50%;
+}
+
+div.text-wrapper {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36pt;
+    line-height: 36pt;
+    color: #222222;
+    display: inline-block;
+}
+
+#banner {
+    border-color: #444444;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 8pt;
+    display: block;
+    margin: 8pt;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+    div.auth {
+     background-color: #00008f;
+     text-align: left;
+     border-right-style: solid;
+}
+    div.dece {
+     background-color: #0285b3;
+     text-align: right;
+     border-right-style: solid;
+}    
+    div.radc {
+     background-color: #ff0000;
+     text-align: left;
+     border-right-style: solid;
+}
+     div.refr {
+     background-color: #ff86c1;
+     text-align: right;
+     border-right-style: solid;
+}
+    div.prog {
+     background-color: #0000ff;
+     text-align: left;
+     border-right-style: solid;
+}
+     div.prim {
+     background-color: #008800;
+     text-align: right;
+     border-right-style: solid;
+}
+    div.anth {
+     background-color: #848484;
+     text-align: left;
+     border-right-style: solid;
+}
+     div.ecoc {
+     background-color: #00ff00;
+     text-align: right;
+     border-right-style: solid;
+}
+    div.pess {
+     background-color: #7b1f94;
+     text-align: left;
+     border-right-style: solid;
+}
+     div.opti {
+     background-color: #00b61a;
+     text-align: right;
+     border-right-style: solid;
+}
+
+span.weight-300 {
+    font-weight: 300;
+}
