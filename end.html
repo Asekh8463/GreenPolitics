@@ -166,9 +166,6 @@
     function setScoreValue(name, value) {
         innerel = document.getElementById(name)
         outerel = document.getElementById("score-" + name)
-        if (innerel.offsetWidth + 20 > outerel.offsetWidth) {
-            innerel.style.visibility = "hidden"
-        }
     }
 
     authArray = ["Very Centralized","Centralized","Partially Centralized","Balanced","Partially Decentralized","Decentralized","Very Decentralized"]
