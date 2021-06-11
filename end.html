@@ -163,16 +163,6 @@
            return(NaN);
     }
 
-	function setScoreValue(name, value) {
-        innerel = document.getElementById(name)
-        outerel = document.getElementById("score-" + name)
-        outerel.style.width = (value + "%")
-        innerel.innerHTML = (value + "%")
-        if (innerel.offsetWidth + 20 > outerel.offsetWidth) {
-            innerel.style.visibility = "hidden"
-        }
-    }
-
     authArray = ["Very Centralized","Centralized","Partially Centralized","Balanced","Partially Decentralized","Decentralized","Very Decentralized"]
     radcArray = ["Revolutionary","Radical","Somewhat Radical","Neutral","Somewhat Reformist","Reformist","Institutionalist"]
     progArray = ["Very Progressive","Progressive","Slightly Progressive","Balanced","Slightly Regressive","Regressive","Primitivist"]
