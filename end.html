@@ -138,8 +138,8 @@
   <p><b>Future: <span class="weight-300" id="pessimist-label"></span></b></p></b></p>
  <div class="line">
 <img id="img-pessimism" src="pessimism.svg" height=128pt"/>
-<div class="score pess" id="score-pess"><div class="text" id="anthropocentric"></div></div>
-<div class="score opti" id="score-opti"><div class="text" id="ecocentric"></div></div>
+<div class="score pess" id="score-pess"><div class="text" id="pessimism"></div></div>
+<div class="score opti" id="score-opti"><div class="text" id="optimistic"></div></div>
 <img id="img-optimism" src="optimism.svg" height=128pt"/>
  </div>
 	
@@ -163,9 +163,14 @@
            return(NaN);
     }
 
-    function setScoreValue(name, value) {
+	function setScoreValue(name, value) {
         innerel = document.getElementById(name)
         outerel = document.getElementById("score-" + name)
+        outerel.style.width = (value + "%")
+        innerel.innerHTML = (value + "%")
+        if (innerel.offsetWidth + 20 > outerel.offsetWidth) {
+            innerel.style.visibility = "hidden"
+        }
     }
 
     authArray = ["Very Centralized","Centralized","Partially Centralized","Balanced","Partially Decentralized","Decentralized","Very Decentralized"]
@@ -183,7 +188,7 @@
         if (val >= 25) { return ary[4] } else
         if (val >= 10) { return ary[5] } else
         if (val >= 0) { return ary[6] } else
-        	{return ""}
+        	{return ary[6] }
     }
 
     centralized      = getQueryVariable("u")
@@ -222,12 +227,11 @@
     ideodist = Infinity
     for (var i = 0; i < ideologies.length; i++) {
         dist = 0
-        dist += Math.pow(Math.abs(ideologies[i].stats.radi - centralism), 2)
-        dist += Math.pow(Math.abs(ideologies[i].stats.coop - radical), 1.5)
-        dist += Math.pow(Math.abs(ideologies[i].stats.ownr - progressive), 1.75)
+        dist += Math.pow(Math.abs(ideologies[i].stats.radi - centralized), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.coop - radical), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.ownr - progressive), 1.5)
         dist += Math.pow(Math.abs(ideologies[i].stats.glob - anthropocentric), 1.5)
 	dist += Math.pow(Math.abs(ideologies[i].stats.prog - pessimism), 0)
-
         if (dist < ideodist) {
             ideology = ideologies[i].name
             ideodist = dist
@@ -279,23 +283,23 @@
             ctx.fillRect(120, 510, 560, 80)
             ctx.fillRect(120, 630, 560, 80)
             ctx.fillStyle="#0008f"
-            ctx.fillRect(120, 184, 5.6*centralized-2, 72)
+            ctx.fillRect(120, 154, 5.6*centralized-2, 72)
             ctx.fillStyle="#0285b3"
             ctx.fillRect(682-5.6*decentral, 184, 5.6*decentral-2, 72)
             ctx.fillStyle="#ff0000"
-            ctx.fillRect(120, 304, 5.6*radical-2, 72)
+            ctx.fillRect(120, 274, 5.6*radical-2, 72)
             ctx.fillStyle="#ff86c1"
             ctx.fillRect(682-5.6*reformist, 304, 5.6*reformist-2, 72)
             ctx.fillStyle="#0000ff"
-            ctx.fillRect(120, 424, 5.6*progressive-2, 72)
+            ctx.fillRect(120, 394, 5.6*progressive-2, 72)
             ctx.fillStyle="#008800"
             ctx.fillRect(682-5.6*primitive, 424, 5.6*primitive-2, 72)
             ctx.fillStyle="#848484"
-            ctx.fillRect(120, 544, 5.6*anthropocentric-2, 72)
+            ctx.fillRect(120, 514, 5.6*anthropocentric-2, 72)
             ctx.fillStyle="00ff00"
             ctx.fillRect(682-5.6*ecocentric, 544, 5.6*ecocentric-2, 72)
             ctx.fillStyle="#7b1f94"
-            ctx.fillRect(120, 664, 5.6*pessimism-2, 72)
+            ctx.fillRect(120, 634, 5.6*pessimism-2, 72)
             ctx.fillStyle="#00b61a"
             ctx.fillRect(682-5.6*optimistic, 664, 5.6*optimistic-2, 72)
             ctx.fillStyle="#E7DECC"
