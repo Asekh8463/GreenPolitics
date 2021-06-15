@@ -42,7 +42,7 @@
 </div>
 <h2>Future: <span class="weight-300" id="futur-label"></span></h2>
 <div class="axis">
-    <img id="img-pessimism" src="optimism.svg" height="128pt"/>
+    <img id="img-optimism" src="optimism.svg" height="128pt"/>
     <div class="bar opti" id="bar-opti"><div class="text" id="opti"></div></div>
     <div class="bar pess" id="bar-pess"><div class="text" id="pess"></div></div>
     <img id="img-pessimism" src="pessimism.svg" height="128pt"/>
@@ -148,26 +148,30 @@
         var c = document.createElement("canvas")
         var ctx = c.getContext("2d")
         c.width = 800;
-        c.height = 650;
+        c.height = 813;
         ctx.fillStyle = "#EEEEEE"
-        ctx.fillRect(0,0,800,650);
+        ctx.fillRect(0,0,813,650);
 
-        img = document.getElementById("img-equality")
+        img = document.getElementById("img-indy")
         ctx.drawImage(img, 20, 170, 100, 100);
-        img = document.getElementById("img-wealth")
+        img = document.getElementById("img-auth")
         ctx.drawImage(img, 680, 170, 100, 100)
-        img = document.getElementById("img-might")
+        img = document.getElementById("img-radc")
         ctx.drawImage(img, 20, 290, 100, 100)
-        img = document.getElementById("img-peace")
+        img = document.getElementById("img-refr")
         ctx.drawImage(img, 680, 290, 100, 100)
-        img = document.getElementById("img-liberty")
-        ctx.drawImage(img, 20, 410, 100, 100)
-        img = document.getElementById("img-authority")
-        ctx.drawImage(img, 680, 410, 100, 100)
-        img = document.getElementById("img-tradition")
-        ctx.drawImage(img, 20, 530, 100, 100)
         img = document.getElementById("img-progress")
+        ctx.drawImage(img, 20, 410, 100, 100)
+        img = document.getElementById("img-prim")
+        ctx.drawImage(img, 680, 410, 100, 100)
+        img = document.getElementById("img-anthro")
+        ctx.drawImage(img, 20, 530, 100, 100)
+        img = document.getElementById("img-eco")
         ctx.drawImage(img, 680, 530, 100, 100)
+        img = document.getElementById("img-optimism")
+        ctx.drawImage(img, 20, 650, 100, 100)
+        img = document.getElementById("img-pessimism")
+        ctx.drawImage(img, 680, 650, 100, 100)
 
         ctx.fillStyle="#222222"
         ctx.fillRect(120, 180, 560, 80)
