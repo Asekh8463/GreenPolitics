@@ -92,38 +92,43 @@
         	{return ""}
     }
 
-    equality  = getQueryVariable("e")
-    peace     = getQueryVariable("d")
-    liberty   = getQueryVariable("g")
-    progress  = getQueryVariable("s")
-    progress  = getQueryVariable("s")
-    wealth    = (100 - equality).toFixed(1)
-    might     = (100 - peace   ).toFixed(1)
-    authority = (100 - liberty ).toFixed(1)
-    tradition = (100 - progress).toFixed(1)
+    auth      = getQueryVariable("u")
+    radc      = getQueryVariable("r")
+    prog      = getQueryVariable("p")
+    anth      = getQueryVariable("a")
+    pess      = getQueryVariable("n")
+    dece      = (100 - auth    ).toFixed(1)
+    refr      = (100 - radc    ).toFixed(1)
+    prim      = (100 - prog    ).toFixed(1)
+    ecoc      = (100 - anth    ).toFixed(1)
+    opti      = (100 - pess    ).toFixed(1)
 
-    setBarValue("equality", equality)
-    setBarValue("wealth", wealth)
-    setBarValue("peace", peace)
-    setBarValue("might", might)
-    setBarValue("liberty", liberty)
-    setBarValue("authority", authority)
-    setBarValue("progress", progress)
-    setBarValue("tradition", tradition)
+    setBarValue("auth", auth)
+    setBarValue("dece", dece)
+    setBarValue("radc", radc)
+    setBarValue("refr", refr)
+    setBarValue("prog", prog)
+    setBarValue("prim", prim)
+    setBarValue("anth", anth)
+    setBarValue("ecoc", ecoc)
+    setBarValue("pess", pess)
+    setBarValue("opti", opti)
 
-    document.getElementById("economic-label").innerHTML = setLabel(equality, econArray)
-    document.getElementById("diplomatic-label").innerHTML = setLabel(peace, diplArray)
-    document.getElementById("state-label").innerHTML = setLabel(liberty, govtArray)
-    document.getElementById("society-label").innerHTML = setLabel(progress, sctyArray)
+    document.getElementById("coord-label").innerHTML = setLabel(auth, authArray)
+    document.getElementById("rebel-label").innerHTML = setLabel(radc, radcArray)
+    document.getElementById("techn-label").innerHTML = setLabel(prog, progArray)
+    document.getElementById("centr-label").innerHTML = setLabel(anth, anthArray)
+    document.getElementById("futur-label").innerHTML = setLabel(pess, nihiArray)
 
     ideology = ""
     ideodist = Infinity
     for (var i = 0; i < ideologies.length; i++) {
         dist = 0
-        dist += Math.pow(Math.abs(ideologies[i].stats.econ - equality), 2)
-        dist += Math.pow(Math.abs(ideologies[i].stats.govt - liberty), 2)
-        dist += Math.pow(Math.abs(ideologies[i].stats.dipl - peace), 1.73856063)
-        dist += Math.pow(Math.abs(ideologies[i].stats.scty - progress), 1.73856063)
+        dist += Math.pow(Math.abs(ideologies[i].stats.auth - auth), 2.5)
+        dist += Math.pow(Math.abs(ideologies[i].stats.radc - radc), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.prog - prog), 1.5)
+        dist += Math.pow(Math.abs(ideologies[i].stats.anth - anth), 1)
+        dist += Math.pow(Math.abs(ideologies[i].stats.nihi - pess), 0)
         if (dist < ideodist) {
             ideology = ideologies[i].name
             ideodist = dist
