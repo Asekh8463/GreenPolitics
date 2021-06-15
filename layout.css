@@ -52,10 +52,10 @@ div.bar {
 }
 
 div.text {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Arial';
     font-size: 36pt;
     line-height: 36pt;
-    color: #222222;
+    color: #ffffff;
     display: inline-block;
 }
 
