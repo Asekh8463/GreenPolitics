@@ -156,7 +156,7 @@ ideologies = [
     },      
     {
         "name": "Neoluddism",
-        "desc": "Neoluddists, such as the infamous Unabomber, wat to revert to a agarian, preidustial society.."
+        "desc": "Neoluddists, such as the infamous Unabomber, wat to revert to a agarian, preidustial society."
         "stats": {
             "auth": 25,
             "radc": 85,
