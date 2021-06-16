@@ -10,37 +10,37 @@
 <h1><b style="color:#028a0f;">Green</b><b>Politics</b></h1>
 <hr>
 
-<h1><u>Results<u></h1>
+<h1><u>Results</u></h1>
 
-        <h2><b>Coordination: </b><span class="weight-300" id="coord-label"></span></h2>
+        <h2><span class="weight-300"><b>Coordination: </b></span><span class="weight-300" id="coord-label"></span></h2>
 <div class="axis">
     <img id="img-indy" src="indy.svg" height="128pt"/>
     <div class="bar dece" id="bar-dece"><div class="text" id="dece"></div></div>
     <div class="bar auth" id="bar-auth"><div class="text" id="auth"></div></div>
     <img id="img-auth" src="auth.svg" height="128pt"/>
 </div>
-<h2><b>Rebelliousness: </b><span class="weight-300" id="rebel-label"></span></h2>
+<h2><span class="weight-300"><b>Rebelliousness: </b>/span><span class="weight-300" id="rebel-label"></span></h2>
 <div class="axis">
     <img id="img-radc" src="radical.svg" height="128pt"/>
     <div class="bar radc" id="bar-radc"><div class="text" id="radc"></div></div>
     <div class="bar refr" id="bar-refr"><div class="text" id="refr"></div></div>
     <img id="img-refr" src="reform.svg" height="128pt"/>
 </div>
-<h2><b>Technology: </b><span class="weight-300" id="techn-label"></span></h2>
+<h2><span class="weight-300"><b>Technology: </b>/span><span class="weight-300" id="techn-label"></span></h2>
 <div class="axis">
     <img id="img-progress" src="progress.svg" height="128pt"/>
     <div class="bar prog" id="bar-prog"><div class="text" id="prog"></div></div>
     <div class="bar prim" id="bar-prim"><div class="text" id="prim"></div></div>
     <img id="img-prim" src="prim.svg" height="128pt"/>
 </div>
-<h2><b>Preservation: </b><span class="weight-300" id="centr-label"></span></h2>
+<h2><span class="weight-300"><b>Preservation: </b>/span><span class="weight-300" id="centr-label"></span></h2>
 <div class="axis">
     <img id="img-anthro" src="anthro.svg" height="128pt"/>
     <div class="bar anth" id="bar-anth"><div class="text" id="anth"></div></div>
     <div class="bar ecoc" id="bar-ecoc"><div class="text" id="ecoc"></div></div>
     <img id="img-eco" src="eco.svg" height="128pt"/>
 </div>
-<h2><b>Future: </b><span class="weight-300" id="futur-label"></span></h2>
+        <h2><span class="weight-300"><b>Future: </b></span><span class="weight-300" id="futur-label"></span></h2>
 <div class="axis">
     <img id="img-optimism" src="optimism.svg" height="128pt"/>
     <div class="bar opti" id="bar-opti"><div class="text" id="opti"></div></div>
@@ -190,9 +190,9 @@
         ctx.fillRect(120, 420, 560, 80)
         ctx.fillRect(120, 540, 560, 80)
         ctx.fillRect(120, 660, 560, 80)
-        ctx.fillStyle="#0285b3"
-        ctx.fillRect(120, 184, 5.6*auth-2, 72)
         ctx.fillStyle="#00008f"
+        ctx.fillRect(120, 184, 5.6*auth-2, 72)
+        ctx.fillStyle="0285b3"
         ctx.fillRect(682-5.6*dece, 184, 5.6*dece-2, 72)
         ctx.fillStyle="#ff0000"
         ctx.fillRect(120, 304, 5.6*radc-2, 72)
@@ -206,15 +206,15 @@
         ctx.fillRect(120, 544, 5.6*anth-2, 72)
         ctx.fillStyle="#00ff00"
         ctx.fillRect(682-5.6*ecoc, 544, 5.6*ecoc-2, 72)
-        ctx.fillStyle="#00b61a"
-        ctx.fillRect(120, 664, 5.6*pess-2, 72)
         ctx.fillStyle="#7b1f94"
+        ctx.fillRect(120, 664, 5.6*pess-2, 72)
+        ctx.fillStyle="#00b61a"
         ctx.fillRect(682-5.6*opti, 184, 5.6*opti-2, 72)
         ctx.fillStyle="#000000"
         ctx.font="700 80px Arial"
         ctx.textAlign="left"
         ctx.fillText("GreenPolitics", 20, 90)
-        ctx.font="40px Arial"
+        ctx.font="35px Arial"
         ctx.fillText(ideology, 20, 140)
 
         ctx.textAlign="left"
