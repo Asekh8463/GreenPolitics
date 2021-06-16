@@ -169,17 +169,7 @@ ideologies = [
             "anth": 5,
             "nihi": 50,
         }
-    },   
-    {
-        "name": "Dark Green Ecology",
-        "stats": {
-            "auth": 55,
-            "radc": 95,
-            "prog": 30,
-            "anth": 5,
-            "nihi": 50,
-        }
-    },   
+    },    
     {
         "name": "Green Municipalism",
         "stats": {
