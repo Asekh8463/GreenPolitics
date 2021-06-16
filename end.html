@@ -164,9 +164,9 @@
         ctx.fillStyle = "#efede3"
         ctx.fillRect(0,0,800,813);
 
-        img = document.getElementById("img-indy")
-        ctx.drawImage(img, 20, 170, 100, 100);
         img = document.getElementById("img-auth")
+        ctx.drawImage(img, 20, 170, 100, 100);
+        img = document.getElementById("img-indy")
         ctx.drawImage(img, 680, 170, 100, 100)
         img = document.getElementById("img-radc")
         ctx.drawImage(img, 20, 290, 100, 100)
@@ -180,9 +180,9 @@
         ctx.drawImage(img, 20, 530, 100, 100)
         img = document.getElementById("img-eco")
         ctx.drawImage(img, 680, 530, 100, 100)
-        img = document.getElementById("img-optimism")
-        ctx.drawImage(img, 20, 650, 100, 100)
         img = document.getElementById("img-pessimism")
+        ctx.drawImage(img, 20, 650, 100, 100)
+        img = document.getElementById("img-optimism")
         ctx.drawImage(img, 680, 650, 100, 100)
 
         ctx.fillStyle="#f8f2ed"
@@ -231,7 +231,7 @@
         if (ecoc      > 30) {ctx.fillText(ecoc  + "%", 670, 597.5)}
         if (opti      > 30) {ctx.fillText(opti  + "%", 670, 717.5)}
 
-        ctx.font="300 30px Arial"
+        ctx.font="300 12px Arial"
         ctx.fillText("Asekh8463.github.io/GreenPolitics", 780, 60)
         ctx.textAlign="center"
         ctx.fillText("Coordination: " + document.getElementById("coord-label").innerHTML, 400, 175)
