@@ -7,40 +7,40 @@
 </script>
 
 <body>
-<h1>GreenPolitics</h1>
+<h1><b style="color:#028a0f;">Green</b><b>Politics</b></h1>
 <hr>
 
-<h1>Results</h1>
+<h1><u>Results<u></h1>
 
-<h2>Coordination: <span class="weight-300" id="coord-label"></span></h2>
+        <h2><b>Coordination: </b><span class="weight-300" id="coord-label"></span></h2>
 <div class="axis">
     <img id="img-indy" src="indy.svg" height="128pt"/>
     <div class="bar dece" id="bar-dece"><div class="text" id="dece"></div></div>
     <div class="bar auth" id="bar-auth"><div class="text" id="auth"></div></div>
     <img id="img-auth" src="auth.svg" height="128pt"/>
 </div>
-<h2>Rebelliousness: <span class="weight-300" id="rebel-label"></span></h2>
+<h2><b>Rebelliousness: </b><span class="weight-300" id="rebel-label"></span></h2>
 <div class="axis">
     <img id="img-radc" src="radical.svg" height="128pt"/>
     <div class="bar radc" id="bar-radc"><div class="text" id="radc"></div></div>
     <div class="bar refr" id="bar-refr"><div class="text" id="refr"></div></div>
     <img id="img-refr" src="reform.svg" height="128pt"/>
 </div>
-<h2>Technology: <span class="weight-300" id="techn-label"></span></h2>
+<h2><b>Technology: </b><span class="weight-300" id="techn-label"></span></h2>
 <div class="axis">
     <img id="img-progress" src="progress.svg" height="128pt"/>
     <div class="bar prog" id="bar-prog"><div class="text" id="prog"></div></div>
     <div class="bar prim" id="bar-prim"><div class="text" id="prim"></div></div>
     <img id="img-prim" src="prim.svg" height="128pt"/>
 </div>
-<h2>Preservation: <span class="weight-300" id="centr-label"></span></h2>
+<h2><b>Preservation: </b><span class="weight-300" id="centr-label"></span></h2>
 <div class="axis">
     <img id="img-anthro" src="anthro.svg" height="128pt"/>
     <div class="bar anth" id="bar-anth"><div class="text" id="anth"></div></div>
     <div class="bar ecoc" id="bar-ecoc"><div class="text" id="ecoc"></div></div>
     <img id="img-eco" src="eco.svg" height="128pt"/>
 </div>
-<h2>Future: <span class="weight-300" id="futur-label"></span></h2>
+<h2><b>Future: </b><span class="weight-300" id="futur-label"></span></h2>
 <div class="axis">
     <img id="img-optimism" src="optimism.svg" height="128pt"/>
     <div class="bar opti" id="bar-opti"><div class="text" id="opti"></div></div>
@@ -50,7 +50,7 @@
 <h2>Closest Match: <span class="weight-300" id="ideology-label"></span></h2>
 <p>Ideological matching is a work in progress, and is much less accurate than the values and axes.</p>
         <h1> Explanantion of the values: </h1>
-  <p><b style="color:#00008f;">Centralized:</b> Supports government co-ordination to stop climate change. <br>
+  <p style="text-align:left;"><b style="color:#00008f;">Centralized:</b> Supports government co-ordination to stop climate change. <br>
    <b style="color:#0285b3;">Decentral:</b> Prefers fighting climate change with non-governmental organizations, such as syndicates or corporations. <br>
    <b style="color:#ff86c1;">Reform:</b> Thinks that mordern-day institutions are caoable and can effectively combat climate change. <br>
    <b style="color:#ff0000;">Radical:</b> believe that rapid change is needed to stop climate change. <br> 
@@ -62,7 +62,6 @@
    <b style="color:#7b1f94;">Pessimistic:</b> Believes that climate change has gone too far to me stopped.<br>
  </p>
 <p>Got any questions, comments, or suggestions? Feel free to DM me @Asekh#8463 on Discord! </p>
-<hr/>
 <img src="" id="banner">
 <script>
     function getQueryVariable(variable)
@@ -192,9 +191,9 @@
         ctx.fillRect(120, 540, 560, 80)
         ctx.fillRect(120, 660, 560, 80)
         ctx.fillStyle="#0285b3"
-        ctx.fillRect(120, 184, 5.6*dece-2, 72)
+        ctx.fillRect(120, 184, 5.6*auth-2, 72)
         ctx.fillStyle="#00008f"
-        ctx.fillRect(682-5.6*auth, 184, 5.6*auth-2, 72)
+        ctx.fillRect(682-5.6*dece, 184, 5.6*dece-2, 72)
         ctx.fillStyle="#ff0000"
         ctx.fillRect(120, 304, 5.6*radc-2, 72)
         ctx.fillStyle="#ff86c1"
@@ -208,30 +207,30 @@
         ctx.fillStyle="#00ff00"
         ctx.fillRect(682-5.6*ecoc, 544, 5.6*ecoc-2, 72)
         ctx.fillStyle="#00b61a"
-        ctx.fillRect(120, 664, 5.6*opti-2, 72)
+        ctx.fillRect(120, 664, 5.6*pess-2, 72)
         ctx.fillStyle="#7b1f94"
-        ctx.fillRect(682-5.6*pess, 184, 5.6*pess-2, 72)
+        ctx.fillRect(682-5.6*opti, 184, 5.6*opti-2, 72)
         ctx.fillStyle="#000000"
         ctx.font="700 80px Arial"
         ctx.textAlign="left"
         ctx.fillText("GreenPolitics", 20, 90)
-        ctx.font="50px Arial"
+        ctx.font="40px Arial"
         ctx.fillText(ideology, 20, 140)
 
         ctx.textAlign="left"
-        if (auth      > 30) {ctx.fillText(auth + "%", 130, 237.5)}
-        if (radc      > 30) {ctx.fillText(radc + "%", 130, 357.5)}
-        if (prog      > 30) {ctx.fillText(prog + "%", 130, 477.5)}
-        if (anth      > 30) {ctx.fillText(anth + "%", 130, 597.5)}
-        if (pess      > 30) {ctx.fillText(pess + "%", 130, 717.5)}
+        if (auth      > 25) {ctx.fillText(auth + "%", 130, 237.5)}
+        if (radc      > 25) {ctx.fillText(radc + "%", 130, 357.5)}
+        if (prog      > 25) {ctx.fillText(prog + "%", 130, 477.5)}
+        if (anth      > 25) {ctx.fillText(anth + "%", 130, 597.5)}
+        if (pess      > 25) {ctx.fillText(pess + "%", 130, 717.5)}
         ctx.textAlign="right"
-        if (dece      > 30) {ctx.fillText(dece  + "%", 670, 237.5)}
-        if (refr      > 30) {ctx.fillText(refr  + "%", 670, 357.5)}
-        if (prim      > 30) {ctx.fillText(prim  + "%", 670, 477.5)}
-        if (ecoc      > 30) {ctx.fillText(ecoc  + "%", 670, 597.5)}
-        if (opti      > 30) {ctx.fillText(opti  + "%", 670, 717.5)}
+        if (dece      > 25) {ctx.fillText(dece  + "%", 670, 237.5)}
+        if (refr      > 25) {ctx.fillText(refr  + "%", 670, 357.5)}
+        if (prim      > 25) {ctx.fillText(prim  + "%", 670, 477.5)}
+        if (ecoc      > 25) {ctx.fillText(ecoc  + "%", 670, 597.5)}
+        if (opti      > 25) {ctx.fillText(opti  + "%", 670, 717.5)}
 
-        ctx.font="300 12px Arial"
+        ctx.font="300 20px Arial"
         ctx.fillText("Asekh8463.github.io/GreenPolitics", 780, 60)
         ctx.textAlign="center"
         ctx.fillText("Coordination: " + document.getElementById("coord-label").innerHTML, 400, 175)
