@@ -2,6 +2,7 @@
 <link href='layout.css' rel='stylesheet' type='text/css'>
 <title>GreenPolitics</title>
 </head>
+<script type="application/javascript" src="expl.js" defer></script> 
 <script type="application/javascript"
         src="ideology.js">
 </script>
@@ -47,7 +48,7 @@
     <div class="bar pess" id="bar-pess"><div class="text" id="pess"></div></div>
     <img id="img-pessimism" src="pessimism.svg" height="128pt"/>
 </div>
-<h2 style="color:#ffffff;">Closest Match: <span class="weight-300" id="ideology-label"></span></h2>
+<h2 style="color:#ffffff;">Closest Match: <span class="weight-300" id="ideology-label"></span><span class="weight-300" id="meaning-label"></span></h2>
         <h1> Explanantion of the values: </h1>
   <p style="text-align:left;"><b style="color:#00008f;">Centralized:</b> Supports government co-ordination to stop climate change. <br>
    <b style="color:#0285b3;">Decentral:</b> Prefers fighting climate change with non-governmental organizations, such as syndicates or corporations. <br>
@@ -144,7 +145,25 @@
             ideodist = dist
         }
     }
+        
     document.getElementById("ideology-label").innerHTML = ideology
+        
+    meaning = ""
+    meandist = Infinity
+    for (var i = 0; i < meanings.length; i++) {
+        dist = 0
+        dist += Math.pow(Math.abs(ideologies[i].stats.auth - auth), 2.5)
+        dist += Math.pow(Math.abs(ideologies[i].stats.radc - radc), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.prog - prog), 1.5)
+        dist += Math.pow(Math.abs(ideologies[i].stats.anth - anth), 1)
+        dist += Math.pow(Math.abs(ideologies[i].stats.nihi - pess), 0)
+        if (dist < meandist) {
+            meaning = meanings[i].name
+            meandist = dist
+        }
+    }
+        
+    document.getElementById("meaning-label").innerHTML = meaning
 
     function createImage(src, x, y, w, h) {
         img = new Image ()
