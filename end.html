@@ -2,7 +2,7 @@
 <link href='layout.css' rel='stylesheet' type='text/css'>
 <title>GreenPolitics</title>
 </head>
-<script type="application/javascript" src="expl.js" defer></script> 
+</script> 
 <script type="application/javascript"
         src="ideology.js">
 </script>
@@ -148,22 +148,22 @@
         
     document.getElementById("ideology-label").innerHTML = ideology
         
-    meaning = ""
-    meandist = Infinity
-    for (var i = 0; i < meanings.length; i++) {
+    descriptions = ""
+    descdist = Infinity
+    for (var i = 0; i < descriptions.length; i++) {
         dist = 0
         dist += Math.pow(Math.abs(ideologies[i].stats.auth - auth), 2.5)
         dist += Math.pow(Math.abs(ideologies[i].stats.radc - radc), 2)
         dist += Math.pow(Math.abs(ideologies[i].stats.prog - prog), 1.5)
         dist += Math.pow(Math.abs(ideologies[i].stats.anth - anth), 1)
         dist += Math.pow(Math.abs(ideologies[i].stats.nihi - pess), 0)
-        if (dist < meandist) {
-            meaning = meanings[i].name
-            meandist = dist
+        if (dist < descdist) {
+            description = descriptions[i].name
+            meandesc = desc
         }
     }
         
-    document.getElementById("meaning-label").innerHTML = meaning
+    document.getElementById("description-label").innerHTML = description
 
     function createImage(src, x, y, w, h) {
         img = new Image ()
