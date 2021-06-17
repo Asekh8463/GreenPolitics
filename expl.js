@@ -10,7 +10,7 @@ descriptions = [
             "nihi": 50,
         }
     },               
-        "desc": "Animal Liberationists focus on animal rights, sometimes using violence to achieve their goals.",
+        "desc" "Animal Liberationists focus on animal rights, sometimes using violence to achieve their goals.",
         "stats": {
             "auth": 75,
             "radc": 100,
