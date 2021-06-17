@@ -154,15 +154,15 @@
         
     description = ""
     descdist = Infinity
-    for (var i = 0; i < description.length; i++) {
+    for (var j = 0; j < description.length; j++) {
         dist = 0
-        dist += Math.pow(Math.abs(descriptions[i].stats.auth - auth), 2.5)
-        dist += Math.pow(Math.abs(descriptions[i].stats.radc - radc), 2)
-        dist += Math.pow(Math.abs(descriptions[i].stats.prog - prog), 1.5)
-        dist += Math.pow(Math.abs(descriptions[i].stats.anth - anth), 1)
-        dist += Math.pow(Math.abs(descriptions[i].stats.nihi - pess), 0)
+        dist += Math.pow(Math.abs(descriptions[j].stats.auth - auth), 2.5)
+        dist += Math.pow(Math.abs(descriptions[j].stats.radc - radc), 2)
+        dist += Math.pow(Math.abs(descriptions[j].stats.prog - prog), 1.5)
+        dist += Math.pow(Math.abs(descriptions[j].stats.anth - anth), 1)
+        dist += Math.pow(Math.abs(descriptions[j].stats.nihi - pess), 0)
         if (dist < descdist) {
-            description = descriptions[i].name
+            description = descriptions[j].name
             descdist = desc
         }
     }
@@ -215,7 +215,7 @@
         ctx.fillStyle="#00008f"
         ctx.fillRect(120, 184, 5.6*auth-2, 72)
         ctx.fillStyle="#0285b3"
-        ctx.fillRect(682-5.6*dece, 184, 5.6*dece-2, 72)
+        ctx.fillRect(682-5.6*dece, 304, 5.6*dece-2, 72)
         ctx.fillStyle="#ff0000"
         ctx.fillRect(120, 304, 5.6*radc-2, 72)
         ctx.fillStyle="#ff86c1"
@@ -231,7 +231,7 @@
         ctx.fillStyle="#7b1f94"
         ctx.fillRect(120, 664, 5.6*pess-2, 72)
         ctx.fillStyle="#00b61a"
-        ctx.fillRect(682-5.6*opti, 184, 5.6*opti-2, 72)
+        ctx.fillRect(682-5.6*opti, 544, 5.6*opti-2, 72
         ctx.fillStyle="#000000"
         ctx.font="700 60px Arial"
         ctx.textAlign="left"
