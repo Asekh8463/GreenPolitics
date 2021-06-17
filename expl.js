@@ -1,5 +1,5 @@
 
-description = [
+descriptions = [
     {
         "desc": "Eco-terrorists believe that their goals can be achieved through the use of violence.",
         "stats": {
