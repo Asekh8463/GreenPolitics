@@ -155,11 +155,11 @@
     descdist = Infinity
     for (var i = 0; i < descriptions.length; i++) {
         dist = 0
-        dist += Math.pow(Math.abs(ideologies[i].stats.auth - auth), 2.5)
-        dist += Math.pow(Math.abs(ideologies[i].stats.radc - radc), 2)
-        dist += Math.pow(Math.abs(ideologies[i].stats.prog - prog), 1.5)
-        dist += Math.pow(Math.abs(ideologies[i].stats.anth - anth), 1)
-        dist += Math.pow(Math.abs(ideologies[i].stats.nihi - pess), 0)
+        dist += Math.pow(Math.abs(descriptions[i].stats.auth - auth), 2.5)
+        dist += Math.pow(Math.abs(descriptions[i].stats.radc - radc), 2)
+        dist += Math.pow(Math.abs(descriptions[i].stats.prog - prog), 1.5)
+        dist += Math.pow(Math.abs(descriptions[i].stats.anth - anth), 1)
+        dist += Math.pow(Math.abs(descriptions[i].stats.nihi - pess), 0)
         if (dist < descdist) {
             description = descriptions[i].name
             meandesc = desc
