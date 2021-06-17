@@ -51,7 +51,7 @@
     <img id="img-pessimism" src="pessimism.svg" height="128pt"/>
 </div>
 <p style="color:#ffffff;">Closest Match: <span class="weight-300" id="ideology-label"></span></p> <br>
-        <h2 style="color:#ffffff;"><span class="weight-300" id="description-label"></span></h2>
+        <h2 style="color:#ffffff;"><span class="weight-300" id="ideology-label"></span></h2>
         
 <h1> The values: </h1>  
 <p style="text-align:left;">
@@ -154,22 +154,25 @@
         
     document.getElementById("ideology-label").innerHTML = ideology
         
-    description = ""
-    descdist = Infinity
-    for (var i = 0; i < descriptions.length; i++) {
+
+    ideology = ""
+    ideodist = Infinity
+    for (var i = 0; i < ideologies.length; i++) {
         dist = 0
-        dist += Math.pow(Math.abs(descriptions[i].stats.auth - auth), 2.5)
-        dist += Math.pow(Math.abs(descriptions[i].stats.radc - radc), 2)
-        dist += Math.pow(Math.abs(descriptions[i].stats.prog - prog), 1.5)
-        dist += Math.pow(Math.abs(descriptions[i].stats.anth - anth), 1)
-        dist += Math.pow(Math.abs(descriptions[i].stats.nihi - pess), 0)
-        if (dist < descdist) {
-            description = descriptions[i].desc
-            descdist = desc
+        dist += Math.pow(Math.abs(ideologies[i].stats.auth - auth), 2.5)
+        dist += Math.pow(Math.abs(ideologies[i].stats.radc - radc), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.prog - prog), 1.5)
+        dist += Math.pow(Math.abs(ideologies[i].stats.anth - anth), 1)
+        dist += Math.pow(Math.abs(ideologies[i].stats.nihi - pess), 0)
+        if (dist < ideodist) {
+            ideology = ideologies[i].name
+            ideodist = dist
         }
     }
+   
         
-    document.getElementById("description-label").innerHTML = description
+    document.getElementById("ideology-label").innerHTML = ideology
+       
 
     function createImage(src, x, y, w, h) {
         img = new Image ()
