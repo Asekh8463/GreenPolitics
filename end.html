@@ -49,7 +49,7 @@
     <img id="img-pessimism" src="pessimism.svg" height="128pt"/>
 </div>
 <p style="color:#ffffff;">Ideology: <span class="weight-300" id="ideology-label"></span></p> <br>
-<p style="color:#ffffff;">Explanation:<span class="weight-300" id="ther-label"></span></p>
+<p style="color:#ffffff;">.<span class="weight-300" id="ther-label"></span></p>
         
 <h1> The values: </h1>  
 <p style="text-align:left;">
@@ -147,8 +147,24 @@
             ideology = ideologies[i].name
             ideodist = dist
         }
-    }  
+    } 
+
     document.getElementById("ideology-label").innerHTML = ideology
+
+    ideology = ""
+    ideodist = Infinity
+    for (var i = 0; i < descriptions.length; i++) {
+        dist = 0
+        dist += Math.pow(Math.abs(ideology[i].stats.auth - dece), 2.5)
+        dist += Math.pow(Math.abs(ideology[i].stats.radc - refr), 2)
+        dist += Math.pow(Math.abs(ideology[i].stats.prog - prim), 1.5)
+        dist += Math.pow(Math.abs(ideology[i].stats.anth - ecoc), 1)
+        dist += Math.pow(Math.abs(ideology[i].stats.nihi - opti), 0)
+        if (ideo < idedist) {
+            ideology = ideology[i].ther
+            ideodist = dist
+        }
+    }
 
     document.getElementById("ther-label").innerHTML = ther
        
