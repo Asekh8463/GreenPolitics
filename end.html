@@ -147,11 +147,8 @@
             ideology = ideologies[i].name
             ideodist = dist
         }
-    }
-   
-        
-    document.getElementById("ther-label").innerHTML = ther
-        
+    }  
+    document.getElementById("ideology-label").innerHTML = ideology
 
     ideology = ""
     ideodist = Infinity
@@ -166,10 +163,8 @@
             ideology = ideologies[i].ther
             ideodist = dist
         }
-    }
-   
-        
-    document.getElementById("description-label").innerHTML = description
+    }   
+    document.getElementById("ther-label").innerHTML = ther
        
 
     function createImage(src, x, y, w, h) {
