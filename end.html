@@ -2,8 +2,6 @@
 <link href='layout.css' rel='stylesheet' type='text/css'>
 <title>GreenPolitics</title>
 </head>
-<script type="application/javascript"
-        src="expl.js" defer>
 </script>        
 <script type="application/javascript"
         src="ideology.js">
@@ -51,7 +49,7 @@
     <img id="img-pessimism" src="pessimism.svg" height="128pt"/>
 </div>
 <p style="color:#ffffff;">Ideology: <span class="weight-300" id="ideology-label"></span></p> <br>
-<p style="color:#ffffff;">Explanation:<span class="weight-300" id="description-label"></span></p>
+<p style="color:#ffffff;">Explanation:<span class="weight-300" id="ther-label"></span></p>
         
 <h1> The values: </h1>  
 <p style="text-align:left;">
@@ -152,21 +150,21 @@
     }
    
         
-    document.getElementById("ideology-label").innerHTML = ideology
+    document.getElementById("ther-label").innerHTML = ther
         
 
-    description = ""
-    descdist = Infinity
-    for (var i = 0; i < descriptions.length; i++) {
+    ideology = ""
+    ideodist = Infinity
+    for (var i = 0; i < ideologies.length; i++) {
         dist = 0
-        dist += Math.pow(Math.abs(descriptions[i].stats.auth - dece), 2.5)
-        dist += Math.pow(Math.abs(descriptions[i].stats.radc - refr), 2)
-        dist += Math.pow(Math.abs(descriptions[i].stats.prog - prim), 1.5)
-        dist += Math.pow(Math.abs(descriptions[i].stats.anth - ecoc), 1)
-        dist += Math.pow(Math.abs(descriptions[i].stats.nihi - opti), 0)
-        if (dist < descdist) {
-            description = description[i].ther
-            descdist = dist
+        dist += Math.pow(Math.abs(ideologies[i].stats.auth - dece), 2.5)
+        dist += Math.pow(Math.abs(ideologies[i].stats.radc - refr), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.prog - prim), 1.5)
+        dist += Math.pow(Math.abs(ideologies[i].stats.anth - ecoc), 1)
+        dist += Math.pow(Math.abs(ideologies[i].stats.nihi - opti), 0)
+        if (dist < ideodist) {
+            ideology = ideologies[i].ther
+            ideodist = dist
         }
     }
    
