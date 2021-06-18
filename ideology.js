@@ -1,5 +1,4 @@
-  
-ideologies = [
+  ideologies = [
     {
         "name": "Eco-terrorism",
         "stats": {
