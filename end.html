@@ -153,14 +153,14 @@
 
     ideology = ""
     ideodist = Infinity
-    for (var i = 0; i < descriptions.length; i++) {
+    for (var i = 0; i < ideology.length; i++) {
         dist = 0
         dist += Math.pow(Math.abs(ideology[i].stats.auth - dece), 2.5)
         dist += Math.pow(Math.abs(ideology[i].stats.radc - refr), 2)
         dist += Math.pow(Math.abs(ideology[i].stats.prog - prim), 1.5)
         dist += Math.pow(Math.abs(ideology[i].stats.anth - ecoc), 1)
         dist += Math.pow(Math.abs(ideology[i].stats.nihi - opti), 0)
-        if (ideo < idedist) {
+        if (ideo < ideodist) {
             ideology = ideology[i].ther
             ideodist = dist
         }
