@@ -12,7 +12,7 @@
     {
         "name": "Animal Liberationism",
         "stats": {
-            "auth": 75,
+            "auth": 65,
             "radc": 100,
             "prog": 25,
             "anth": 0,
@@ -22,7 +22,7 @@
     {
         "name": "US Greens",
         "stats": {
-            "auth": 70,
+            "auth": 65,
             "radc": 15,
             "prog": 65,
             "anth": 70,
@@ -52,8 +52,8 @@
     {
         "name": "Deep Ecology",
         "stats": {
-            "auth": 20,
-            "radc": 70,
+            "auth": 15,
+            "radc": 75,
             "prog": 15,
             "anth": 5,
             "nihi": 50,
@@ -63,9 +63,9 @@
         "name": "Authoritarian Ecology",
         "stats": {
             "auth": 100,
-            "radc": 40,
+            "radc": 45,
             "prog": 65,
-            "anth": 65,
+            "anth": 70,
             "nihi": 50,
         }
     },
@@ -75,14 +75,14 @@
             "auth": 100,
             "radc": 100,
             "prog": 15,
-            "anth": 60,
+            "anth": 40,
             "nihi": 50,
         }
     }, 
     {
         "name": "Eco-Socialism",
         "stats": {
-            "auth": 70,
+            "auth": 75,
             "radc": 55,
             "prog": 75,
             "anth": 65,
@@ -113,16 +113,16 @@
         "name": "Green Syndicalism",
         "stats": {
             "auth": 10,
-            "radc": 80,
-            "prog": 80,
-            "anth": 85,
+            "radc": 75,
+            "prog": 70,
+            "anth": 80,
             "nihi": 50,
         }
     },      
     {
         "name": "Technogaianism",
         "stats": {
-            "auth": 45,
+            "auth": 40,
             "radc": 85,
             "prog": 100,
             "anth": 75,
@@ -134,7 +134,7 @@
         "stats": {
             "auth": 45,
             "radc": 20,
-            "prog": 90,
+            "prog": 85,
             "anth": 60,
             "nihi": 50,
         }
@@ -152,19 +152,19 @@
     {
         "name": "Light Green Ecology",
         "stats": {
-            "auth": 15,
+            "auth": 20,
             "radc": 15,
             "prog": 65,
-            "anth": 50,
+            "anth": 70,
             "nihi": 50,
         }
     },   
     {
         "name": "Dark Green Ecology",
         "stats": {
-            "auth": 70
-            "radc": 95,
-            "prog": 30,
+            "auth": 70,
+            "radc": 90,
+            "prog": 25,
             "anth": 5,
             "nihi": 50,
         }
