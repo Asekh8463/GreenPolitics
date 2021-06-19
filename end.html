@@ -48,8 +48,11 @@
     <div class="bar pess" id="bar-pess"><div class="text" id="pess"></div></div>
     <img id="img-pessimism" src="pessimism.svg" height="128pt"/>
 </div>
-<p style="color:#ffffff;">Ideology: <span class="weight-300" id="ideology-label"></span></p> <br>
-<p style="color:#ffffff;">.<span class="weight-300" id="ther-label"></span></p>
+<div id="content">      
+<p style="color:#ffffff;">Ideology: <span class="weight-300" id="ideology-label"></span></p></div> <br>
+
+<p style="color:#ffffff;" id="ther"></p>
+
         
 <h1> The values: </h1>  
 <p style="text-align:left;">
@@ -148,26 +151,17 @@
             ideodist = dist
         }
     } 
-
     document.getElementById("ideology-label").innerHTML = ideology
 
-    ideology = ""
-    ideodist = Infinity
-    for (var i = 0; i < ideologies.length; i++) {
-        dist = 0
-        dist += Math.pow(Math.abs(ideology[i].stats.auth - dece), 2.5)
-        dist += Math.pow(Math.abs(ideology[i].stats.radc - refr), 2)
-        dist += Math.pow(Math.abs(ideology[i].stats.prog - prim), 1.5)
-        dist += Math.pow(Math.abs(ideology[i].stats.anth - ecoc), 1)
-        dist += Math.pow(Math.abs(ideology[i].stats.nihi - opti), 0)
-        if (ideo < ideodist) {
-            ideology = ideologies[i].ther
-            ideodist = dist
-        }
-    }
+var desc = ["Eco-terrorists believe that their goals can be achieved through the use of violence.","Animal Liberationists focus on animal rights, sometimes using violence to achieve their goals.","Your policies are similar to the policies of the US green party, which is centre-left.","Anarcho-primitivists want to create a stateless, preindustrial society.","Eco-anarchists support the abolishment of the state with a focus on environmentalism.","Deep Ecologists belive all living things are equal and should be treated as such.","Authoritarian ecologists support the creation of a strong state to help combat climate change.","Eco-fascists support a totalitarian, xenophobic state.","Eco-socialists support a centrally-planned economy and believe capitalism is killing the planet.", "Green Liberalists support a free-market economy with strict anvironmental regulations.", "Green Libertarians believe that a capitalist free market can prevent climate change.", "Green Syndicalists support an economy based on decentralized worker organizations.", "Technogaianists believe that through unlocking advanced technologies climatechange can be stopped. Often transhumanist.","Bright Greens support the advancement of technology as a method to stop climate change. Also known as Eco-modernism.","Neoluddists, such as the infamous Unabomber, want to revert to a agarian, preindustial society.","Light Greens support action on a personal level to reverse climate change.","Dark Greens support radical and violent political change to prevent climate change.","Green Municipalists support decentralizing efforts to fight climate change to local organizations."]
 
-    document.getElementById("ther-label").innerHTML = ther
-       
+if($('#content').text().length > 0) {  
+
+  if($('#content').text().indexOf('Eco-terrorism')){
+  	console.log('Eco-terrorists believe that their goals can be achieved through the use of violence.');
+  }
+
+}
 
     function createImage(src, x, y, w, h) {
         img = new Image ()
