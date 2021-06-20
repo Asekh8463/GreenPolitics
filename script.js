@@ -251,6 +251,16 @@ questions = [
         }
     },
     {
+        "question": "people in small groups are more effective than a larger, centralized organization."
+        "effect": {
+            "auth": -6,
+            "radc": 1,
+            "prog": -1,
+            "anth": 1,
+            "nihi": 0
+       }
+    },
+    {
         "question": "It's better to increase efficiency of fossil fuels than try quickly transitioning to renewable resources.",
         "effect": {
             "auth": 0,
@@ -258,7 +268,7 @@ questions = [
             "prog": 4,
             "anth": 1,
             "nihi": 0
-        }
+        }   
     },
     {
         "question": "Some industries, even though they release hugh levels of emissions, are too vital to be shut down.",
