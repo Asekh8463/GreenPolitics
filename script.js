@@ -389,4 +389,93 @@ questions = [
             "nihi": 0
         }
     }
+        "question": "We should reduce production and consumption of meat and other environmentally harmful products.",
+        "effect": {
+            "auth": 1,
+            "radc": 3,
+            "prog": 0,
+            "anth": -3,
+            "nihi": 0
+        }
+    },
+    {
+        "question": "We should shut down all factories.",
+        "effect": {
+            "auth": 1,
+            "radc": 4,
+            "prog": -5,
+            "anth": -5,
+            "nihi": 0
+        }
+    },
+    {
+        "question": "Banning environmentally harmful goods is ineffective, we should instead develop eco-friendly alternatives.",
+        "effect": {
+            "auth": -3,
+            "radc": 0,
+            "prog": 4,
+            "anth": 2,
+            "nihi": 0
+        }
+    },
+    {
+        "question": "Investing in humanitarian efforts in third-world countries is good as it reduces likelihood of conflict over scarce resources.",
+        "effect": {
+            "auth": 0,
+            "radc": -1,
+            "prog": 1,
+            "anth": 4,
+            "nihi": -1
+        }
+    },
+    {
+        "question": "Incentives to motivate people to recycle are useful.",
+        "effect": {
+            "auth": 3,
+            "radc": -3,
+            "prog": 1,
+            "anth": 0,
+            "nihi": 0
+        }
+    },
+    {
+        "question": "Any decisions on conservation should be taken at the local level and should not disregard the local population.",
+        "effect": {
+            "auth": -5,
+            "radc": 0,
+            "prog": 0,
+            "anth": 1,
+            "nihi": 0
+        }
+    },
+    {
+        "question": "People who believe that technological advances will stop climate change are too optimistic.",
+        "effect": {
+            "auth": 0,
+            "radc": 1,
+            "prog": -5,
+            "anth": 0,
+            "nihi": 4
+        }
+    },
+    {
+        "question": "non-essential travel, like tourism, should be restricted."
+        "effect": {
+            "auth": 3,
+            "radc": 0,
+            "prog": -1,
+            "anth": -2,
+            "nihi": 0
+        }
+    },
+    {
+        "question": "people in small groups are more effective than a larger, centralized organization."
+        "effect": {
+            "auth": -6,
+            "radc": 1,
+            "prog": -1,
+            "anth": 1,
+            "nihi": 0
+        }
+    },
 ];
