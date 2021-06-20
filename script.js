@@ -71,7 +71,7 @@ questions = [
         }
     },
     {
-        "question": "Induviduals should form organizations to help fight against climate change",
+        "question": "Induviduals should form non-governmental organizations to help fight against climate change",
         "effect": {
             "auth": -5,
             "radc": 0,
@@ -118,16 +118,6 @@ questions = [
             "prog": 6,
             "anth": 0,
             "nihi": -1
-        }
-    },
-    {
-        "question": "Rather than rapidly switching to renewables, we should gradually transition to prevent problems.",
-        "effect": {
-            "auth": 1,
-            "radc": -4,
-            "prog": -1,
-            "anth": 0,
-            "nihi": 0
         }
     },
     {
@@ -224,10 +214,10 @@ questions = [
         "question": "It's best to elect politicians who will pass eco-friendly laws rather than attempt radical change.",
         "effect": {
             "auth": 1,
-            "radc": -6,
+            "radc": -7,
             "prog": 0,
             "anth": 0,
-            "nihi": 0
+            "nihi": -2
         }
     },
     {
@@ -371,6 +361,16 @@ questions = [
         }
     },
     {
+        "question": "We should reduce production and consumption of meat and other environmentally harmful products.",
+        "effect": {
+            "auth": 2,
+            "radc": 4,
+            "prog": -1,
+            "anth": -4,
+            "nihi": 0
+        }
+    },
+    {
         "question": "Humans are more important than animals.",
         "effect": {
             "auth": 0,
@@ -379,7 +379,7 @@ questions = [
             "anth": 2,
             "nihi": 0
         }
-    },
+    },   
     {
         "question": "Organizations such as Greenpeace are effective.",
         "effect": {
