@@ -68,7 +68,8 @@
 <div id="content">      
 <p style="color:#ffffff;">Ideology: <span class="weight-300" id="ideology-label"></span></p></div> <br>
 
-<button class="button" onclick="aFunction()">Details</button> <br>
+<button class="button" onclick="theFunction()">Details</button> <br>
+  <p style="color:#ffffff" id="desc"></p>
 
         
 <h1> The values: </h1>  
@@ -87,49 +88,69 @@
 <p>Got any questions, comments, or suggestions? Feel free to DM me @Asekh#8463 on Discord! </p>
 <img src="" id="banner">
 <script>
-function aFunction () {
-        var person == prompt ("To find out details about your ideology, copy-paste your result in the box below!")
-        if (status == null || status == "") {
-            status = "Nothing entered.";
-        } else if (status === "Eco-terrorism") {
-            status = "Eco-terrorists believe that their goals can be achieved through the use of violence.";
-        } else if (status === "Animal Liberationism") {
-            status = "Animal Liberationists focus on animal rights, sometimes using violence to achieve their goals.";
-        } else if (status === "Anarcho-primitivism") {
-           status = "Anarcho-primitivists want to create a stateless, preindustrial society, with humanity living a hunter-gethere lifestyle.";
-        } else if (status === "US Greens") {
-            status = "Your policies are similar to the policies of the US Green Party, which is centre-left.";
-        } else if (status === "Eco-anarchism") {
-            status = "Eco-anarchists support a stateless, environmentally-friendly society.;
-        } else if (status === "Deep Ecology") {
-           status = "Deep Ecologists believe all living things are equal and should be treated as such.";
-        } else if (status === "Authoritarian Ecology") {
-            status = "Authoritarian ecologists support the existence of a strong state to protect the environment.";
-        } else if (status === "Eco-Fascism") {
-            status = "Eco-fascists supprt a authoritarian, xenophobic, state.";
-        } else if (status === "Eco-Socialism") {
-           status = "Eco-soclialists support a centrally planned economy to protect the climate.";
-        } else if (status === "Green Liberalism") {
-            status = "Green Liberals support a free market with strict environmental regulations.";
-        } else if (status === "Green Libertarianism") {
-            status = "Green Libertarians, support a free market with environmental protection generated through competition.";
-        } else if (status === "Green Syndicalism") {
-           status = "Green Syndicalists believe in a society based around decentralized, eco-friendly workers organizations.
-        } else if (status === "Technogaianism") {
-            status = "Technogaianists support a huge advances in technology to prevent climate change, even transhumanism.";
-        } else if (status === "Bright Green Ecology") {
-           status = "Bright Green ecology, or Eco-modernism, supports the advancement of technology to stop climate change.";
-        } else if (status === "Neoluddism") {
-            status = "Neoluddists support humanity returning to an agarian, prein.";
-        } else if (status === "Light Green Ecology") {
-            status = "Light Green ecologists believe climate change can and should be fought at the induvidual scale.";
-        } else if (status === "Dark Green Ecology") {
-           status = "Dark Green ecologists support radical changes to the status quo as the only method to stop climate change.";        
-          } else if (status === "Green Municipalism") {
-           status = "Green Municipalists support in decentralized, local organizations rather than centrally-controlled groups.";        
-        } else {
-            status = "Invalid, sorry, enter again :\";
+function thFunction () {
+        var text;
+        var ideoDesc = prompt("Copy-paste the name of your ideology to see a description");
+  switch(ideoDesc) {
+    case "Eco-terrorism":
+           text = "Eco-terrorists believe that their goals can be achieved through the use of violence.";
+        break;
+    case "Animal Liberationism":
+        break;
+      text = "Animal Liberationists focus on animal rights, sometimes using violence to achieve their goals.";
+        break;
+    case "Anarcho-primitivism":
+      text = "Anarcho-primitivists want to create a stateless, preindustrial society, with humanity living a hunter-gethere lifestyle.";
+        break;
+    case "US Greens":
+      text = "Your policies are similar to the policies of the US Green Party, which is centre-left.";
+        break;  
+    case "Eco-anarchism":
+      text = "Eco-anarchists support a stateless, environmentally-friendly society.";
+        break;
+    case "Deep Ecology":
+      text = "Deep Ecologists believe all living things are equal and should be treated as such.";
+        break;
+    case "Authoritarian Ecology":
+      text = "Authoritarian ecologists support the existence of a strong state to protect the environment.";
+        break;
+    case "Eco-Fascism":
+      text = "Eco-fascists supprt a authoritarian, xenophobic, state.";
+        break;
+    case "Eco-Socialism":
+      text = "Eco-soclialists support a centrally planned economy to protect the climate.";
+        break;
+    case "Green Liberalism":
+      text = "Green Liberals support a free market with strict environmental regulations.";
+        break;
+    case "Green Libertarianism":
+      text = "Green Libertarians, support a free market with environmental protection generated through competition.";
+        break;
+    case "Green Syndicalism":
+      text = "Green Syndicalists believe in a society based around decentralized, eco-friendly workers organizations.";
+        break;
+    case "Technogaianism":
+      text = "Technogaianists support a huge advances in technology to prevent climate change, even transhumanism.";
+        break;     
+    case "Bright Green Ecology":
+      text = "Bright Green ecology, or Eco-modernism, supports the advancement of technology to stop climate change.";
+        break;
+    case "Neoluddism":
+      text = "Neoluddists support humanity returning to an agarian, preindustrial society.";
+        break;
+    case "Light Green Ecology":
+      text = "Light Green ecologists believe climate change can and should be fought at the induvidual scale.";
+        break;
+    case "Dark Green Ecology":
+      text = "Dark Green ecologists support radical changes to the status quo as the only method to stop climate change.";  
+        break;
+    case "Green Municipalism":
+      text = "Green Municipalists support in decentralized, local organizations rather than centrally-controlled groups.";  
+        break;
+    default:
+      text = "You must've made a mistake, try again :/"
         }
+    document.getElementById("desc").innerHTML = text;
       }
         
     function getQueryVariable(variable)
