@@ -389,7 +389,7 @@ questions = [
             "nihi": 0
         }
     },
-    }
+    {
         "question": "We should reduce production and consumption of meat and other environmentally harmful products.",
         "effect": {
             "auth": 1,
