@@ -1,5 +1,5 @@
 questions = [
-       {
+    {
         "question": "Governments should place more environmental restrictions on businesses and penalize businesses which pollute.",
         "effect": {
             "auth": 5,
