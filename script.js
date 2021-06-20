@@ -36,7 +36,7 @@ questions = [
             "radc": -2,
             "prog": 2,
             "anth": 1,
-            "nihi": -4,
+            "nihi": -4
         }
     },
     {
@@ -388,6 +388,7 @@ questions = [
             "anth": -1,
             "nihi": 0
         }
+    },
     }
         "question": "We should reduce production and consumption of meat and other environmentally harmful products.",
         "effect": {
@@ -477,5 +478,5 @@ questions = [
             "anth": 1,
             "nihi": 0
         }
-    },
+    }
 ];
