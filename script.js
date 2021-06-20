@@ -368,6 +368,26 @@ questions = [
             "anth": 2,
             "nihi": 4
         }
+    },    
+    {
+        "question": "Non-essential travel, like tourism, should be restricted."
+        "effect": {
+            "auth": 3,
+            "radc": 0,
+            "prog": -1,
+            "anth": -2,
+            "nihi": 0
+        }
+    },
+    {
+        "question": "Non-essential travel, like tourism, should be restricted."
+        "effect": {
+            "auth": 3,
+            "radc": 0,
+            "prog": -1,
+            "anth": -2,
+            "nihi": 0
+        }
     },
     {
         "question": "Humans are more important than animals.",
@@ -457,16 +477,6 @@ questions = [
             "prog": -5,
             "anth": 0,
             "nihi": 4
-        }
-    },
-    {
-        "question": "non-essential travel, like tourism, should be restricted."
-        "effect": {
-            "auth": 3,
-            "radc": 0,
-            "prog": -1,
-            "anth": -2,
-            "nihi": 0
         }
     },
     {
