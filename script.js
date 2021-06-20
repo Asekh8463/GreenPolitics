@@ -251,7 +251,7 @@ questions = [
         }
     },
     {
-        "question": "people in small groups are more effective than a larger, centralized organization."
+        "question": "people in small groups are more effective than a larger, centralized organization.",
         "effect": {
             "auth": -6,
             "radc": 1,
