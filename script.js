@@ -319,16 +319,6 @@ questions = [
             "nihi": 1
         }
     },
-    {   
-        "question": "Any decision of conservation should be taken centrally, as local decisions may be at odds."
-        "effect": {
-            "auth": 5,
-            "radc": -1,
-            "prog": 0,
-            "anth": -1,
-            "nihi": 0
-        }
-    },
     {
         "question": "Efforts should be made to protect animals from climate change.",
         "effect": {
