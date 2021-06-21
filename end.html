@@ -225,9 +225,9 @@ function theFunction () {
     ideodist = Infinity
     for (var i = 0; i < ideologies.length; i++) {
         dist = 0
-        dist += Math.pow(Math.abs(ideologies[i].stats.auth - dece), 2.5)
+        dist += Math.pow(Math.abs(ideologies[i].stats.auth - dece), 2)
         dist += Math.pow(Math.abs(ideologies[i].stats.radc - refr), 2)
-        dist += Math.pow(Math.abs(ideologies[i].stats.prog - prim), 1.5)
+        dist += Math.pow(Math.abs(ideologies[i].stats.prog - prim), 2)
         dist += Math.pow(Math.abs(ideologies[i].stats.anth - ecoc), 1)
         dist += Math.pow(Math.abs(ideologies[i].stats.nihi - opti), 0)
         if (dist < ideodist) {
