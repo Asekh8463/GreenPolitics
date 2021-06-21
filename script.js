@@ -180,7 +180,7 @@ questions = [
         }
     },
     {
-        "question": "The present-day economic system cannot appropriately deal with the climate cricis, and radical change is needed.",
+        "question": "The present-day economic system cannot appropriately deal with the climate crisis, and radical change is needed.",
         "effect": {
             "auth": 0,
             "radc": 6,
@@ -369,6 +369,16 @@ questions = [
             "nihi": 0
         }
     },
+    {
+        "question": "Small, decentralized groups are more effective than a lerger, centralized, organization.",
+        "effect": {
+            "auth" : -6,
+            "radc" : 0,
+            "prog" : 0, 
+            "anth" : 0,
+            "nihi" : 0
+        }
+    },      
     {
         "question": "Humans are more important than animals.",
         "effect": {
