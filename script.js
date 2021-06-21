@@ -370,7 +370,7 @@ questions = [
         }
     },
     {
-        "question": "Small, decentralized groups are more effective than a lerger, centralized, organization.",
+        "question": "Small, decentralized groups are more effective than larger, centralized, organizations.",
         "effect": {
             "auth" : -6,
             "radc" : 0,
@@ -388,7 +388,17 @@ questions = [
             "anth": 2,
             "nihi": 0
         }
-    },   
+    }, 
+    {
+        "question": "Any decision of conservation should be taken centrally, as local decisions may not be the best.",
+        "effect": {
+            "auth": 5,
+            "radc": 0,
+            "prog": 0,
+            "anth": 0,
+            "nihi": 0
+        }
+    },           
     {
         "question": "Organizations such as Greenpeace are effective.",
         "effect": {
