@@ -310,13 +310,23 @@ questions = [
         }
     },
     {
-        "question": "The international community should co-operate to reduce climate change.",
+        "question": "Rather than co-operating with other countries, different countries should deal with climate change on their own terms.",
         "effect": {
-            "auth": 1,
-            "radc": -1,
-            "prog": 1,
+            "auth": -1,
+            "radc": 1,
+            "prog": -1,
             "anth": 0,
-            "nihi": -1
+            "nihi": 1
+        }
+    },
+    {   
+        "question": "Any decision of conservation should be taken centrally, as local decisions may be at odds."
+        "effect": {
+            "auth": 5,
+            "radc": -1,
+            "prog": 0,
+            "anth": -1,
+            "nihi": 0
         }
     },
     {
