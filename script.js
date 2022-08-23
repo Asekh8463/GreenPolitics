@@ -70,7 +70,7 @@ questions = [
         }
     },
     {
-        "question": "Induviduals should form non-governmental organizations to help fight against climate change",
+        "question": "Individuals should form non-governmental organizations to help fight against climate change.",
         "effect": {
             "auth": -5,
             "radc": 0,
@@ -220,7 +220,7 @@ questions = [
         }
     },
     {
-        "question": "Direct action against polluting organizations and induviduals, even if violent, is justified.",
+        "question": "Direct action against polluting organizations and individuals, even if violent, is justified.",
         "effect": {
             "auth": -2,
             "radc": 5,
@@ -260,7 +260,7 @@ questions = [
         }
     },
     {
-        "question": "Some industries, even though they release hugh levels of emissions, are too vital to be shut down.",
+        "question": "Some industries, even though they release huge levels of emissions, are too vital to be shut down.",
         "effect": {
             "auth": -3,
             "radc": -2,
